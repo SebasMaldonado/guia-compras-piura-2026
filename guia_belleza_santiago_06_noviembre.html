@@ -62,6 +62,8 @@
     .personal-lookbook{margin:24px 0 0;background:#fff;border:1px solid #eadfda;border-radius:20px;padding:10px;box-shadow:0 8px 22px #321d2609}
     .personal-lookbook img{display:block;width:100%;border-radius:14px;max-height:360px;object-fit:cover;object-position:center}
     .personal-lookbook figcaption{padding:10px 6px 3px;color:#907d82;font-size:11px}
+    .hero-art{display:none}
+    .hero-grid{grid-template-columns:1fr;min-height:330px}
     @media(max-width:760px){.reservation-strip{grid-template-columns:1fr 1fr}.hero-photo{inset:0;width:100%;height:100%;opacity:.42}.hero-art .portrait{opacity:.08}}
     .events{display:grid;grid-template-columns:1.32fr 1fr 1fr;gap:12px;margin-top:-29px;position:relative;z-index:3}
     .event{background:var(--surface);padding:18px 21px;border:1px solid #ece1dc;border-radius:17px;box-shadow:0 10px 25px #321d260e;display:flex;gap:13px;align-items:flex-start}
@@ -223,12 +225,10 @@
   <section class="hero" id="inicio"><div class="container hero-grid">
     <div class="hero-content">
       <div class="eyebrow">VIERNES, 6 DE NOVIEMBRE DE 2026</div>
-      <h1>Peinado y maquillaje<br><em>para el 6 de noviembre.</em></h1>
-      <p class="hero-p">Opciones concretas para reservar en Santiago: ondas suaves, semirrecogido o recogido, con maquillaje luminoso, bronce o de noche. Elegí una opción y consultá disponibilidad para ese viernes.</p>
-      <div class="hero-actions"><a class="btn btn-gold" href="#salones">Ver opciones y reservar <span aria-hidden="true">↗</span></a><a class="btn btn-ghost-white" href="#estilos">Ver estilos →</a></div>
+      <h1>Opciones para<br><em>reservar.</em></h1>
+      <div class="hero-actions"><a class="btn btn-gold" href="#salones">Ver salones y reservar <span aria-hidden="true">↗</span></a></div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <img class="hero-photo" src="assets/beauty-hero.png" alt="Inspiración de peinado y maquillaje para una invitada">
       <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 540">
         <defs><linearGradient id="dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a75f70"/><stop offset="1" stop-color="#6f2f4d"/></linearGradient><linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8d7be"/><stop offset="1" stop-color="#c48d7d"/></linearGradient><linearGradient id="hair" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#493039"/><stop offset="1" stop-color="#211421"/></linearGradient></defs>
         <ellipse cx="265" cy="290" rx="200" ry="235" fill="#f2cbab" opacity=".13"/><ellipse cx="265" cy="290" rx="170" ry="205" fill="none" stroke="#f1cbaf" stroke-opacity=".32"/>
@@ -248,7 +248,6 @@
         <path d="M146 360 Q149 439 126 481 M351 353 Q349 431 379 482" stroke="#b48285" stroke-opacity=".5" stroke-width="3" fill="none"/>
         <g fill="#e5bd82" opacity=".7"><circle cx="85" cy="117" r="2"/><circle cx="405" cy="184" r="3"/><circle cx="401" cy="340" r="2"/><circle cx="88" cy="365" r="2"/><path d="M390 97v18m-9-9h18" stroke="#e5bd82" stroke-width="1.5"/></g>
       </svg>
-      <div class="art-label"><small>Inspiración de la noche</small>Borgoña &amp; dorado ✦</div>
     </div>
   </div></section>
 
