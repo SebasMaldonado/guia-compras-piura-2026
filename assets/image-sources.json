@@ -1,0 +1,105 @@
+{
+  "products": [
+    {
+      "id": "p_jose250",
+      "file": "assets/products/jose-canchaque.webp",
+      "source": "https://nilu.pe/producto/cafe-clasico-canchaque-jose-cavero-tostado-oscuro-molido-250grs/"
+    },
+    {
+      "id": "p_josefiltr",
+      "file": "assets/products/jose-filtrante.webp",
+      "source": "https://nilu.pe/producto/cafe-jose-cavero-clasico-canchaque-caja-filtrante-10-unids/"
+    },
+    {
+      "id": "p_villarica",
+      "file": "assets/products/artidoro-villarica.webp",
+      "source": "https://www.tottus.com.pe/tottus-pe/articulo/120733061/cafe-artidoro-origen-villa-rica-molido-250g"
+    },
+    {
+      "id": "p_menta50",
+      "file": "assets/products/wawasana-menta-muna.webp",
+      "source": "https://www.tottus.com.pe/tottus-pe/articulo/115895530/Infusion-Wawasana-Menta-y-Muna-Caja-50-Sobres/115895531"
+    },
+    {
+      "id": "p_verde50",
+      "file": "assets/products/wawasana-verde.webp",
+      "source": "https://www.tottus.com.pe/tottus-pe/articulo/141107288/WAWASANA%20TE%20VERDE%20PURO%20X%2050G/141107289"
+    },
+    {
+      "id": "p_jamaica20",
+      "file": "assets/products/wawasana-jamaica.webp",
+      "source": "https://www.tottus.com.pe/tottus-pe/articulo/152558752/infusion-wawasana-jamaica-pura-caja-20-sobres/152558754"
+    },
+    {
+      "id": "p_orquidea",
+      "file": "assets/products/orquidea-taza.webp",
+      "source": "https://www.tottus.com.pe/tottus-pe/articulo/113936258/Chocolate-para-Taza-Orquidea-Cacao-Organico-Empaque-100-g/113936259"
+    },
+    {
+      "id": "p_korin_powder",
+      "file": "assets/products/korin-cacao.webp",
+      "source": "https://www.korinchocolate.pe/product/polvo-de-cacao"
+    },
+    {
+      "id": "p_korin_yamango",
+      "file": "assets/products/korin-yamango.webp",
+      "source": "https://www.korinchocolate.pe/product/cafe-gourmet-500-gr"
+    },
+    {
+      "id": "p_korin60",
+      "file": "assets/products/korin-tableta60.webp",
+      "source": "https://www.korinchocolate.pe/product/tableta-60-gr"
+    },
+    {
+      "id": "p_canchacafe250",
+      "file": "assets/products/canchacafe250.webp",
+      "source": "https://www.canchacafe.com/productos/cafe-premium-canchacafe-250g/"
+    },
+    {
+      "id": "p_canchacafe1kg",
+      "file": "assets/products/canchacafe1kg.webp",
+      "source": "https://www.canchacafe.com/productos/cafe-premium-canchacafe-1kg/"
+    },
+    {
+      "id": "p_wacao_powder",
+      "file": "assets/products/wacao-polvo.webp",
+      "source": "https://www.canchacafe.com/productos/cacao-en-polvo-wacao-200g/"
+    },
+    {
+      "id": "p_wacao_pasta",
+      "file": "assets/products/wacao-pasta.webp",
+      "source": "https://www.canchacafe.com/productos/chocolate-de-taza-wacao-100g/"
+    },
+    {
+      "id": "p_kanati250",
+      "file": "assets/products/kanati-cacao250.webp",
+      "source": "https://www.kanatiperu.com/products/polvo-100-cacao-250g"
+    },
+    {
+      "id": "p_kanati100",
+      "file": "assets/products/kanati-cacao100.webp",
+      "source": "https://www.kanatiperu.com/products/polvo-100-cacao-100g"
+    },
+    {
+      "id": "p_wawasanaofi",
+      "file": "assets/products/wawasana-menta-muna.webp",
+      "source": "https://www.mitiendawawasana.pe/products/menta-y-muna-x50-uni"
+    }
+  ],
+  "generated": [
+    {
+      "file": "assets/beauty-ponytails.webp",
+      "tool": "image_gen (built-in)",
+      "prompt": "Use case: photorealistic-natural. Asset: hairstyle catalog for this adult woman's wedding guest planning page. Input image 1 and input image 2 are identity references of the SAME adult woman; preserve her recognizable facial features, face shape, skin tone, long dark brown hair and natural proportions. Produce a precise 3 rows by 3 columns grid of nine equal panels. Every row shows ONE identical hairstyle across FRONT view, true SIDE profile view and BACK view in that order. Each column must show that exact angle. The front face must look like the woman in the reference selfies, not a generic model. Head and shoulders, show entire crown and hair tips, hair never cropped. Same burgundy guest dress in all panels, consistent cream studio backdrop, soft even light, natural skin, no text, no logos, no watermark, no veil. Row 1: a high wavy ponytail with soft loose face-framing strands, ponytail attachment clearly visible in side and back. Row 2: a sleek low ponytail, a clean center part and hair wrapped around the tie. Row 3: a single thick loose side braid over the right shoulder, starting behind the ear, with a soft side part. Six individual eyes must not appear anywhere: each panel contains only one head. Keep the exact hair arrangement consistent within each row."
+    },
+    {
+      "file": "assets/beauty-updos.webp",
+      "tool": "image_gen (built-in)",
+      "prompt": "Use case: photorealistic-natural. Asset: hairstyle catalog for this adult woman's wedding guest planning page. Input image 1 and input image 2 are identity references of the SAME adult woman; preserve her recognizable facial features, face shape, skin tone, long dark brown hair and natural proportions. Produce a precise 3 rows by 3 columns grid of nine equal panels. Every row shows ONE identical hairstyle across FRONT view, true SIDE profile view and BACK view in that order. Each column must show that exact angle. The front face must look like the woman in the reference selfies, not a generic model. Head and shoulders, show entire crown and hair tips, hair never cropped. Same burgundy guest dress in all panels, consistent cream studio backdrop, soft even light, natural skin, no text, no logos, no watermark, no veil. Row 1: classic French twist / banana updo, vertically folded at the back, with gently swept front hair. Row 2: a high soft textured bun on the crown with two delicate loose front strands. Row 3: a low braided chignon, a braid wrapping into an intricate low bun. Front, side, and back must show the very same construction in each row. Clear precise salon reference photography."
+    },
+    {
+      "file": "assets/beauty-classics.webp",
+      "source": "Optimized copy of the existing novia-angles-3x3.png generated reference"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+// Fotografías de las fichas comerciales. Los originales se enlazan desde cada tarjeta.
+const productPhotos = {
+  p_jose250: ['jose-canchaque', 'José Cavero · Canchaque', 'Molido · tueste oscuro', '250 g'],
+  p_josefiltr: ['jose-filtrante', 'Canchaque filtrante', 'José Cavero · caja', '10 unidades'],
+  p_villarica: ['artidoro-villarica', 'Artidoro · Villa Rica', 'Café molido de origen', '250 g'],
+  p_menta50: ['wawasana-menta-muna', 'Wawasana · Menta y Muña', 'Infusión herbal', '50 sobres'],
+  p_wawasanaofi: ['wawasana-menta-muna', 'Wawasana · Menta y Muña', 'Tienda de la marca', '50 sobres'],
+  p_verde50: ['wawasana-verde', 'Wawasana · Té verde', 'Té verde puro', '50 sobres'],
+  p_jamaica20: ['wawasana-jamaica', 'Wawasana · Jamaica', 'Infusión de hibisco', '20 sobres'],
+  p_orquidea: ['orquidea-taza', 'Orquídea · cacao para taza', '100 % cacao', '100 g'],
+  p_korin_powder: ['korin-cacao', 'Korin · polvo de cacao', 'Cacao piurano · 100 %', 'Elegir peso'],
+  p_korin_yamango: ['korin-yamango', 'Korin · café Yamango', 'Café del Alto Piura', 'Confirmar peso'],
+  p_korin60: ['korin-tableta60', 'Korin · tableta', 'Foto: variante limón', '60 g'],
+  p_canchacafe250: ['canchacafe250', 'Canchacafé · Alto Piura', 'Café premium', '250 g'],
+  p_canchacafe1kg: ['canchacafe1kg', 'Canchacafé · Alto Piura', 'Café premium', '1 kg'],
+  p_wacao_powder: ['wacao-polvo', 'Wacao · cacao en polvo', 'Cacao puro', '200 g'],
+  p_wacao_pasta: ['wacao-pasta', 'Wacao · pasta para taza', 'Pasta de cacao', '100 g'],
+  p_kanati250: ['kanati-cacao250', 'Kanati · cacao en polvo', '100 % cacao', '250 g'],
+  p_kanati100: ['kanati-cacao100', 'Kanati · cacao en polvo', '100 % cacao', '100 g'],
+};

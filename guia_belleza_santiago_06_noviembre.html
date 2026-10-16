@@ -1,547 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#421b31">
-  <meta name="description" content="Guía interactiva de maquillaje y peluquería para el matrimonio del 6 de noviembre de 2026 en Santiago de Chile. Precios en CLP y UYU, reservas, rutas y favoritos.">
-  <title>El look perfecto · Santiago, 06.11.2026</title>
-  <style>
-    :root{--ink:#252027;--text:#51464e;--soft:#847780;--wine:#4c2137;--wine2:#6c354d;--gold:#b99463;--gold-light:#e7d3b7;--surface:#fffefa;--cream:#fbf7f2;--pink:#f2e4e4;--line:#e7dedb;--green:#236754;--shadow:0 14px 36px rgba(55,31,40,.07);--radius:22px}
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:84px}
-    body{margin:0;color:var(--ink);background:var(--cream);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:15px;line-height:1.52;-webkit-font-smoothing:antialiased}
-    button,input,select,textarea{font:inherit}
-    button{cursor:pointer}
-    a{color:inherit}
-    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #c89365;outline-offset:3px}
-    ::selection{background:#e7ccca;color:#4a2339}
-    .container{max-width:1190px;margin-inline:auto;padding-inline:27px}
-    .serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}
-    .topbar{position:sticky;top:0;z-index:30;background:rgba(251,247,242,.93);backdrop-filter:blur(18px);border-bottom:1px solid rgba(78,40,58,.09)}
-    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:max-content}
-    .brand-mark{height:38px;width:38px;border:1px solid rgba(76,33,55,.48);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:19px;letter-spacing:-3px;padding-right:3px;color:var(--wine)}
-    .brand-name{line-height:1.04;font-family:Georgia,serif;letter-spacing:.035em;font-size:20px;color:var(--wine)}
-    .brand-name small{display:block;color:#a18e91;font-size:9px;font-family:Inter,ui-sans-serif,sans-serif;font-weight:650;letter-spacing:.18em;text-transform:uppercase;margin-top:4px}
-    .navlinks{display:flex;gap:25px;align-items:center;font-size:13px;color:#69575d;font-weight:650}
-    .navlinks a{text-decoration:none;transition:color .2s}
-    .navlinks a:hover{color:var(--wine)}
-    .nav-pill{border:1px solid #d9c4c7;background:white;padding:10px 15px;border-radius:100px;font-size:12px;font-weight:700;color:var(--wine);text-decoration:none;white-space:nowrap}
-    .hero{background:radial-gradient(ellipse at 78% 35%,#8c5863 0%,transparent 42%),linear-gradient(130deg,#381725,#57243f 60%,#67324b);color:white;position:relative;overflow:hidden}
-    .hero::before{content:"";position:absolute;left:-190px;bottom:-340px;width:620px;height:620px;border:1px solid #ffffff13;border-radius:50%;box-shadow:0 0 0 68px #ffffff05,0 0 0 136px #ffffff04}
-    .hero-grid{min-height:510px;display:grid;grid-template-columns:1.08fr .92fr;gap:30px;align-items:center;position:relative}
-    .hero-content{padding:70px 0 75px;position:relative;z-index:2}
-    .eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:11px;font-weight:700;color:#e4c8b3;display:flex;align-items:center;gap:11px}
-    .eyebrow:before{content:"";width:27px;height:1px;background:#d7ae83}
-    h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(45px,5.1vw,74px);line-height:1.09;letter-spacing:-.042em;margin:23px 0 22px;max-width:670px}
-    h1 em{font-weight:400;color:#ebc8a9}
-    .hero-p{font-size:15px;color:#efdfdf;max-width:530px;line-height:1.75;margin:0 0 30px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
-    .btn{border:1px solid transparent;border-radius:999px;min-height:43px;padding:10px 18px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;font-weight:720;font-size:13px;transition:transform .15s ease,background .15s ease,border .15s ease;color:inherit}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:var(--wine);color:white}
-    .btn-primary:hover{background:#632c47}
-    .btn-gold{background:#f0d7b6;color:#472336}
-    .btn-gold:hover{background:#f6e1c5}
-    .btn-ghost-white{border-color:#e5cbbd79;color:white;background:#ffffff08}
-    .btn-outline{background:transparent;border-color:#ddcbcf;color:var(--wine)}
-    .btn-muted{background:#f7f0ed;border-color:#f3e6e2;color:#523447}
-    .btn-sm{padding:9px 13px;min-height:37px;font-size:12px}
-    .hero-art{height:100%;min-height:490px;position:relative;display:flex;justify-content:center;align-items:flex-end;overflow:hidden}
-    .hero-photo{position:absolute;inset:20px 0 20px 22px;width:calc(100% - 22px);height:calc(100% - 40px);object-fit:cover;border-radius:28px;opacity:.9;box-shadow:0 25px 45px #1d0c1750}
-    .hero-art .portrait{position:relative;z-index:1;opacity:.06}
-    .hero-art:after{position:absolute;content:"";inset:auto 20px 28px 50px;border-bottom:1px solid #f0cf9a52}
-    .portrait{height:100%;max-height:508px;width:100%;max-width:490px;display:block;margin-bottom:-6px;filter:drop-shadow(0 25px 45px #1d0c1750)}
-    .art-label{position:absolute;bottom:61px;left:0;background:#fff9f1eb;color:#522840;border:1px solid #f1e4cf;border-radius:14px;padding:13px 17px;box-shadow:0 15px 22px #10071024;font-family:Georgia,serif;font-size:18px;transform:rotate(-2deg)}
-    .art-label small{display:block;font:600 10px Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#97715a;margin-bottom:3px}
-    .reservation-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px auto 0}
-    .reservation-step{background:#fffefa;border:1px solid #eadfda;border-radius:16px;padding:14px 15px;box-shadow:0 8px 20px #321d2609}
-    .reservation-step b{display:block;color:var(--wine);font-size:12px;margin-bottom:4px}
-    .reservation-step span{display:block;color:#83747b;font-size:11px;line-height:1.45}
-    .map-strip{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin:18px auto 0}
-    .map-card{background:#fff;border:1px solid #eadfda;border-radius:16px;padding:14px 16px;box-shadow:0 8px 20px #321d2609}
-    .map-card b{display:block;color:var(--wine);font-size:12px;margin-bottom:4px}.map-card span{display:block;color:#83747b;font-size:11px;line-height:1.45}.map-card a{display:inline-block;margin-top:8px;color:#74445d;font-size:11px;font-weight:800;text-decoration:none}
-    .angle-reference{margin:28px auto 0;background:#fff;border:1px solid #eadfda;border-radius:20px;padding:16px;box-shadow:0 8px 22px #321d2609}.angle-reference h2{font-size:25px;margin-bottom:5px}.angle-reference p{color:#83747b;font-size:12px;margin:0 0 13px}.angle-reference img{display:block;width:100%;border-radius:14px}.angle-reference figcaption{font-size:11px;color:#907d82;margin-top:10px}
-    @media(max-width:760px){.map-strip{grid-template-columns:1fr}.map-strip .btn{width:100%}}
-    .personal-lookbook{margin:24px 0 0;background:#fff;border:1px solid #eadfda;border-radius:20px;padding:10px;box-shadow:0 8px 22px #321d2609}
-    .personal-lookbook img{display:block;width:100%;border-radius:14px;max-height:360px;object-fit:cover;object-position:center}
-    .personal-lookbook figcaption{padding:10px 6px 3px;color:#907d82;font-size:11px}
-    .card-pricing{display:none}
-    #estilos,#seleccion,#agenda{display:none}
-    footer.foot{display:none}
-    .hero-art{display:none}
-    .hero-grid{grid-template-columns:1fr;min-height:330px}
-    @media(max-width:760px){.reservation-strip{grid-template-columns:1fr 1fr}.hero-photo{inset:0;width:100%;height:100%;opacity:.42}.hero-art .portrait{opacity:.08}}
-    .events{display:grid;grid-template-columns:1.32fr 1fr 1fr;gap:12px;margin-top:-29px;position:relative;z-index:3}
-    .event{background:var(--surface);padding:18px 21px;border:1px solid #ece1dc;border-radius:17px;box-shadow:0 10px 25px #321d260e;display:flex;gap:13px;align-items:flex-start}
-    .event-ico{background:#f5ece9;border-radius:12px;width:38px;height:38px;flex:none;display:grid;place-items:center;font-size:18px;color:#773f55}
-    .event small{display:block;color:#998790;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:5px}
-    .event strong{font-size:13.5px;line-height:1.35;display:block;color:#422c39}
-    .event span{font-size:12px;color:#8c7c83;display:block;margin-top:5px}
-    .event a{color:#67354b;text-decoration:none;border-bottom:1px solid #c6abb5;font-size:12px;font-weight:650}
-    main section{padding-top:68px}
-    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}
-    .overline{font-size:10px;letter-spacing:.19em;font-weight:850;text-transform:uppercase;color:#ad7e80;margin-bottom:10px}
-    h2{font:400 clamp(31px,3.5vw,44px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.022em;color:var(--wine);margin:0}
-    .section-desc{color:#80737a;font-size:13px;line-height:1.65;margin:9px 0 0;max-width:670px}
-    .counter{font-size:12px;white-space:nowrap;color:#947a7e;background:#f1e5e1;padding:10px 13px;border-radius:100px;font-weight:700}
-    .looks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .look-tile{border:1.5px solid #e6d8d5;border-radius:20px;background:white;display:flex;align-items:center;text-align:left;overflow:hidden;padding:0;min-height:161px;position:relative;color:var(--ink);transition:transform .16s,border-color .16s,box-shadow .16s}
-    .look-tile:hover,.look-tile.active{border-color:#9f687e;box-shadow:0 10px 24px #56384b13;transform:translateY(-1px)}
-    .look-tile.active:after{content:"✓";position:absolute;top:12px;right:12px;color:#fff;background:var(--wine);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800}
-    .look-fig{height:159px;width:42%;flex:none;background:linear-gradient(155deg,#efe0d5,#d5aeb3);display:grid;place-items:end center;overflow:hidden}
-    .look-fig svg{height:145px;width:100%;max-width:146px;margin-bottom:-3px}
-    .look-tile:nth-child(2) .look-fig{background:linear-gradient(155deg,#ece3e5,#d1afb8)}
-    .look-tile:nth-child(3) .look-fig{background:linear-gradient(155deg,#f3e6d8,#dcbab4)}
-    .look-copy{padding:16px 12px 16px 17px;display:block;flex:1}
-    .look-copy span{display:block;text-transform:uppercase;font-size:9px;letter-spacing:.14em;color:#a98b91;font-weight:800;margin-bottom:8px}
-    .look-copy strong{display:block;font:400 22px/1.13 Georgia,serif;color:#4d293d}
-    .look-copy small{display:block;font-size:11px;line-height:1.46;color:#8b7c83;margin-top:8px}
-    .makeup-row{margin-top:19px;display:flex;align-items:center;gap:13px;flex-wrap:wrap}
-    .makeup-label{font-weight:800;color:#49323f;font-size:12px;margin-right:2px}
-    .makeup-choice{display:flex;gap:7px;align-items:center;border:1px solid #e7d8d4;background:white;border-radius:100px;padding:7px 12px 7px 8px;color:#6c5865;font-size:12px;font-weight:700}
-    .makeup-choice[aria-pressed=true]{background:#f2e3e3;border-color:#ae7e91;color:#4a2539}
-    .swatch{display:inline-block;width:22px;height:22px;border-radius:50%;border:2px solid #fffa;box-shadow:0 0 0 1px #ffffff}
-    .small-note{font-size:11px;color:#9a8890}
-    .recommendation{margin-top:20px;background:#f0e5df;border:1px solid #ead6ce;border-radius:17px;padding:16px 20px;color:#654553;font-size:12.5px;line-height:1.7}
-    .recommendation b{color:#512941}
-    .tools{background:white;border:1px solid #e9dfdc;border-radius:20px;padding:18px;box-shadow:0 5px 22px #44283608;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:14px;margin-top:24px}
-    .field{min-width:0}
-    .field label{display:block;font-weight:800;font-size:10px;letter-spacing:.075em;text-transform:uppercase;color:#8b7981;margin-bottom:7px}
-    .field input,.field select,.field textarea{border:1px solid #e7d9d8;border-radius:11px;padding:11px 13px;background:#fffcfa;width:100%;min-height:43px;color:#392633;outline-offset:2px;font-size:13px}
-    .field input:focus,.field select:focus,.field textarea:focus{border-color:#b9879d}
-    .field-note{font-size:10px;color:#a28e95;margin-top:6px}
-    .switch-row{margin-top:15px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
-    .switch-left{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    .checkline{display:flex;gap:9px;align-items:center;font-size:12px;color:#67515b;font-weight:690;cursor:pointer}
-    .checkline input{accent-color:var(--wine);height:16px;width:16px}
-    .budget-entry{height:35px;width:96px;border:1px solid #ded0cf;border-radius:9px;background:#fffefa;text-align:center;font-size:12px;font-weight:700;color:#55334a}
-    .salon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;margin-top:20px}
-    .salon-card{background:#fffefc;border:1px solid #e9dfdc;border-radius:20px;overflow:hidden;box-shadow:0 5px 26px #59394709;position:relative;display:flex;flex-direction:column;transition:box-shadow .16s,transform .16s,border-color .16s}
-    .salon-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-    .salon-card.chosen{border-color:#a36782;box-shadow:0 12px 30px #703c5224}
-    .salon-art{height:120px;position:relative;overflow:hidden;background:linear-gradient(135deg,#f1dfd2,#e5c1c1)}
-    .salon-art::before{content:"";position:absolute;width:170px;height:170px;border:1px solid #fff9;right:-23px;top:-84px;border-radius:50%;box-shadow:0 0 0 20px #fff2,0 0 0 47px #fff2}
-    .salon-art::after{content:"";position:absolute;width:210px;height:85px;border-radius:50%;left:-50px;bottom:-66px;transform:rotate(-28deg);background:#fff3}
-    .art-2{background:linear-gradient(115deg,#e0bfbb,#bd939d)}
-    .art-3{background:linear-gradient(115deg,#ecd9cf,#c6ad9e)}
-    .art-4{background:linear-gradient(115deg,#ded2d2,#c6b1bf)}
-    .art-5{background:linear-gradient(115deg,#eadcd0,#ceb2ae)}
-    .art-6{background:linear-gradient(115deg,#d8c7c1,#a79097)}
-    .art-7{background:linear-gradient(115deg,#f1e0d0,#d6b9a9)}
-    .salon-art .initials{font:italic 50px Georgia,serif;letter-spacing:-3px;color:#fff9;position:absolute;right:20px;bottom:-11px}
-    .salon-art .mini{position:absolute;top:17px;left:18px;border-radius:6px;background:#ffffffd9;letter-spacing:.12em;text-transform:uppercase;padding:7px 9px;color:#6b4051;font-weight:800;font-size:9px}
-    .salon-content{padding:19px 18px 12px;flex:1;display:flex;flex-direction:column}
-    .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-    .card-top h3{font:400 23px/1.14 Georgia,serif;letter-spacing:-.019em;color:#4a253c;margin:0 0 5px}
-    .subline{color:#91818a;font-size:11.5px}
-    .heart{border:1px solid #e6d6d8;border-radius:50%;width:33px;height:33px;flex:none;display:grid;place-items:center;background:#fff;font-size:19px;color:#987d89;line-height:1;padding:0}
-    .heart.is-on{background:#f6e9ea;color:#933e63;border-color:#d5afbe}
-    .card-pricing{margin-top:16px;background:#faf5f0;border-radius:12px;padding:13px 14px}
-    .price-label{font-size:9px;text-transform:uppercase;letter-spacing:.105em;color:#a38987;font-weight:850}
-    .price-main{font:500 27px/1.15 Georgia,serif;color:#4d283f;margin-top:4px}
-    .price-main small{font:600 11px ui-sans-serif,sans-serif;color:#977e86;margin-left:5px}
-    .price-uyu{font-size:13px;font-weight:780;margin-top:4px;color:#87614d}
-    .price-hint{font-size:10.5px;color:#9a8b8a;margin-top:5px;line-height:1.45}
-    .card-feature{display:flex;gap:7px;align-items:start;margin-top:12px;color:#6f5c65;font-size:12px;line-height:1.5}
-    .card-feature b{font-weight:800;color:#503846}
-    .card-feature .bullet{font-size:13px;color:#ad8e9e}
-    .variant-control{margin-top:10px;display:flex;align-items:center;gap:9px;font-size:11px;color:#7e6973}
-    .variant-control select{min-width:0;max-width:168px;flex:1;border:1px solid #e4d5d2;border-radius:8px;padding:7px;background:white;font-size:11px;color:#4e3444}
-    .card-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
-    .meta-tag{font-size:10px;background:#f7f0ed;color:#7c6572;border-radius:100px;padding:5px 8px;font-weight:720}
-    .card-foot{padding:0 18px 17px;margin-top:auto}
-    .details{margin-top:12px;padding-top:10px;border-top:1px solid #eee3e0}
-    .details summary{font-size:11px;font-weight:750;color:#755261;cursor:pointer;list-style-position:inside}
-    .details p{font-size:11px;line-height:1.6;color:#87757e;margin:8px 0 5px}
-    .details a{font-size:11px;color:#6f4659}
-    .card-buttons{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:15px}
-    .card-buttons .btn{border-radius:10px;min-width:0}
-    .card-aux{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:10px}
-    .textlink{color:#735263;text-decoration:none;font-weight:750;font-size:11px}
-    .textlink:hover{text-decoration:underline}
-    .subaction{font-size:11px;color:#826b75;font-weight:720;border:none;background:transparent;padding:0;text-decoration:underline;text-decoration-color:#d8bac7;text-underline-offset:3px}
-    .choose-btn{width:100%;margin-top:9px;background:#f4edea;color:#6a4054;border-radius:10px;border:1px solid #e9dedd;min-height:34px;padding:7px 9px;font-weight:740;font-size:11px}
-    .choose-btn.chosen{background:#f0dfe8;border-color:#c9a4b5;color:#5b2941}
-    .empty{grid-column:1/-1;background:white;border:1px dashed #d3bdbf;padding:50px 20px;border-radius:18px;text-align:center;color:#846d76}
-    .selected-section{margin-top:40px;background:#f2e8e2;border:1px solid #e7d9d4;border-radius:23px;padding:24px 26px}
-    .selected-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-    .selected-head h3{font:400 28px Georgia,serif;color:#572f43;margin:0}
-    .selected-head p{margin:5px 0 0;font-size:12px;color:#8d7680}
-    .favs{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}
-    .fav-chip{border:1px solid #dcc5cd;background:white;border-radius:100px;padding:9px 12px;display:flex;align-items:center;gap:8px;font-size:12px;color:#663950;font-weight:750}
-    .fav-chip b{font-weight:700;color:#9b7475}
-    .fav-chip button{border:none;background:transparent;color:#926b76;font-size:17px;line-height:1;padding:0}
-    .fav-placeholder{color:#9c8490;font-size:12px;margin-top:15px}
-    .selection-controls{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
-    .selected-callout{margin-top:17px;color:#6a4154;font-size:12px}
-    .timeline{margin-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .timeline-item{border:1px solid #e8dedd;background:#fffefa;border-radius:16px;padding:18px 20px}
-    .timeline-item small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#a08b92;font-weight:850}
-    .timeline-item strong{display:block;margin:9px 0 7px;font:400 26px Georgia,serif;color:#57354a}
-    .timeline-item p{font-size:11px;color:#9b8992;margin:0}
-    .plan-box{display:grid;grid-template-columns:1fr .95fr;gap:22px;background:#fffefa;border:1px solid #e9dfdc;border-radius:22px;padding:23px;box-shadow:0 8px 28px #432d3808}
-    .plan-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
-    .plan-output{background:linear-gradient(145deg,#f4e9e6,#faf4ed);border-radius:17px;padding:24px 22px;display:flex;flex-direction:column;justify-content:center}
-    .plan-output small{font-size:10px;text-transform:uppercase;font-weight:850;color:#a18087;letter-spacing:.1em}
-    .plan-output h3{font:400 31px/1.1 Georgia,serif;color:var(--wine);margin:9px 0 11px}
-    .plan-output p{font-size:12px;color:#856a75;line-height:1.7;margin:3px 0 12px}
-    .plan-list{display:grid;gap:0;margin-top:8px}
-    .plan-result{border-top:1px solid #e2d0cd;padding:11px 0;display:flex;justify-content:space-between;gap:14px;font-size:12px;color:#705666}
-    .plan-result strong{font-size:13px;color:#582d43}
-    .notes{margin-top:13px}
-    .notes textarea{min-height:82px;resize:vertical}
-    .foot{margin-top:82px;background:#402034;color:#e7d4dd;padding:42px 0 26px}
-    .foot-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:35px}
-    .foot h3{font:400 25px Georgia,serif;color:#fff1ea;margin:0 0 12px}
-    .foot p{font-size:12px;line-height:1.85;color:#e0c7d0b9;max-width:440px}
-    .source-links{display:flex;gap:8px;flex-wrap:wrap}
-    .source-links a{font-size:11px;text-decoration:none;border:1px solid #f0d6dd50;border-radius:100px;padding:7px 10px;color:#f1dfe7}
-    .source-links a:hover{background:#ffffff16}
-    .bottomline{border-top:1px solid #ffffff29;padding-top:16px;margin-top:29px;color:#d0b5c0;font-size:11px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    .toast{position:fixed;bottom:23px;left:50%;transform:translate(-50%,20px);background:#402539;color:#fff;border-radius:13px;padding:13px 19px;box-shadow:0 20px 40px #23142345;font-weight:650;font-size:13px;opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;z-index:70;max-width:min(92vw,430px);text-align:center}
-    .toast.visible{opacity:1;transform:translate(-50%,0)}
-    .dialog{max-width:790px;width:min(90vw,790px);border:none;padding:0;border-radius:20px;box-shadow:0 35px 100px #27162180;color:#3c2a38}
-    .dialog::backdrop{background:#25182196;backdrop-filter:blur(5px)}
-    .dialog-head{padding:23px 26px 17px;background:#f7eae7;display:flex;justify-content:space-between;align-items:center;gap:15px}
-    .dialog-head h3{margin:0;font:400 30px Georgia,serif;color:#542d42}
-    .dialog-close{width:33px;height:33px;border-radius:50%;border:1px solid #d9bec8;background:white;color:#664157;font-size:22px;line-height:1}
-    .dialog-content{padding:18px 24px 25px;overflow-x:auto}
-    .comparison{border-collapse:collapse;min-width:560px;width:100%;font-size:12px}
-    .comparison th,.comparison td{border-bottom:1px solid #e8e0df;padding:13px;text-align:left;vertical-align:top}
-    .comparison th{width:25%;color:#9e7585;font-weight:780}
-    .comparison td{color:#4f3846}
-    .tiny{font-size:11px;color:#97838d;line-height:1.55}
-    .mobile-dock{display:none}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    @media(max-width:1030px){.hero-grid{grid-template-columns:1fr .78fr}.salon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.looks{grid-template-columns:repeat(3,minmax(0,1fr))}.look-tile{display:block}.look-fig{width:100%;height:112px}.look-fig svg{height:112px}.look-copy{padding:12px 13px}.look-copy strong{font-size:21px}.navlinks{gap:14px}}
-    @media(max-width:750px){.container{padding-inline:17px}.nav{height:66px}.navlinks{display:none}.nav-pill{padding:9px 11px;font-size:11px}.hero-grid{grid-template-columns:1fr;min-height:0;gap:0}.hero-content{padding:50px 0 20px}.hero-p{font-size:13px}.hero-art{height:275px;min-height:0;max-width:470px;width:100%;margin-inline:auto}.portrait{max-height:300px}.art-label{left:0;bottom:25px;font-size:15px}.hero h1{font-size:clamp(43px,9.6vw,62px);margin:16px 0 17px}.events{grid-template-columns:1fr 1fr;gap:9px;margin-top:-14px}.event{padding:13px 12px;gap:9px}.event:first-child{grid-column:1/-1}.event strong{font-size:12px}.event span{font-size:10px}.event-ico{width:31px;height:31px;border-radius:9px}.section-heading{align-items:start}.counter{display:none}main section{padding-top:52px}.looks{gap:9px}.look-fig{height:105px}.look-fig svg{height:105px}.look-copy strong{font-size:17px}.look-copy span{font-size:8px}.look-copy small{font-size:10px}.makeup-row{align-items:flex-start}.salon-grid{gap:12px}.plan-box{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr}.foot{margin-top:60px}.mobile-dock{position:fixed;z-index:26;bottom:13px;left:17px;right:17px;display:flex;background:#4d2940;border:1px solid #dfbbc77a;box-shadow:0 12px 36px #30202e55;border-radius:15px;padding:9px 10px;align-items:center;justify-content:space-between;color:white;gap:12px}.mobile-dock span{font-size:12px;line-height:1.3}.mobile-dock strong{font-size:13px;display:block}.mobile-dock a{background:#f1d7b6;color:#422236;text-decoration:none;border-radius:10px;padding:10px 13px;font-size:12px;font-weight:850}.foot{padding-bottom:110px}}
-    @media(max-width:530px){.nav-pill{font-size:10px}.brand-name{font-size:16px}.brand-mark{width:33px;height:33px;font-size:17px}.looks{grid-template-columns:1fr}.look-tile{display:flex;min-height:111px}.look-fig{height:123px;width:37%}.look-fig svg{height:126px}.look-copy{padding-left:15px}.look-copy strong{font-size:22px}.tools{grid-template-columns:1fr 1fr;gap:10px;padding:13px}.field select,.field input{font-size:12px}.salon-grid{grid-template-columns:1fr}.salon-art{height:92px}.salon-content{padding-top:16px}.salon-art .initials{font-size:43px}.section-desc{font-size:12px}.selected-section{padding:19px 17px}.timeline{grid-template-columns:1fr}.timeline-item{padding:14px 16px}.plan-fields{grid-template-columns:1fr 1fr;gap:10px}.plan-box{padding:16px}.foot-grid{gap:18px}.bottomline{display:block}.hero-art{height:245px}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
-    @media(max-width:350px){.brand-name small{display:none}.brand-name{font-size:15px}.brand{gap:7px}.nav-pill{padding:8px 8px;font-size:10px}}
-    @media print{.topbar,.hero-art,.mobile-dock,.btn,.heart,.tools,.card-buttons,.card-aux,.selection-controls,.makeup-row,.foot,.dialog,.toast{display:none!important}.hero{background:white!important;color:#352b31}.hero h1{color:#4c2137}.hero-p{color:#555}.hero-content{padding:30px 0}.events{margin:0}.salon-grid{display:block}.salon-card{break-inside:avoid;display:inline-flex;width:48%;margin:0 1% 13px 0}.salon-art{height:50px}main section{padding-top:20px}.looks{display:none}body{background:white}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#191419">
+<meta name="description" content="Nueve peinados con vistas de frente, perfil y atrás, y opciones de maquillaje y peluquería en Santiago para el viernes 6 de noviembre de 2026.">
+<title>Peinados y salones · Santiago · 6 de noviembre</title>
+<link rel="stylesheet" href="assets/beauty.css?v=2">
 </head>
 <body>
-  <header class="topbar"><nav class="container nav" aria-label="Navegación principal">
-    <a class="brand" href="#inicio" aria-label="Volver al inicio"><span class="brand-mark">L<span style="font-style:italic">.</span></span><span class="brand-name">Beauty Edit<small>Santiago · Noviembre 2026</small></span></a>
-    <div class="navlinks"><a href="#salones">Opciones</a><a href="index.html">Guía de compras ↗</a></div>
-    <a class="nav-pill" href="#salones">Ver opciones</a>
-  </nav></header>
-
-  <section class="hero" id="inicio"><div class="container hero-grid">
-    <div class="hero-content">
-      <div class="eyebrow">VIERNES, 6 DE NOVIEMBRE DE 2026</div>
-      <h1>Opciones para<br><em>reservar.</em></h1>
-      <div class="hero-actions"><a class="btn btn-gold" href="#salones">Ver salones y reservar <span aria-hidden="true">↗</span></a></div>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 540">
-        <defs><linearGradient id="dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a75f70"/><stop offset="1" stop-color="#6f2f4d"/></linearGradient><linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8d7be"/><stop offset="1" stop-color="#c48d7d"/></linearGradient><linearGradient id="hair" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#493039"/><stop offset="1" stop-color="#211421"/></linearGradient></defs>
-        <ellipse cx="265" cy="290" rx="200" ry="235" fill="#f2cbab" opacity=".13"/><ellipse cx="265" cy="290" rx="170" ry="205" fill="none" stroke="#f1cbaf" stroke-opacity=".32"/>
-        <path d="M116 492 Q135 435 217 409 L218 359 L309 355 L311 408 Q401 430 423 499 L437 545 H77Z" fill="url(#dress)"/>
-        <path d="M215 387 Q243 433 291 397 L305 432 Q271 472 221 426Z" fill="url(#skin)"/>
-        <path d="M149 363 C105 261 156 143 236 123 C325 98 377 176 364 283 C393 347 384 428 357 477 C337 459 327 445 331 401 L186 411 C190 446 168 468 143 487 C116 438 117 405 149 363Z" fill="url(#hair)"/>
-        <path d="M177 236 C176 168 210 141 269 147 C325 148 352 192 342 270 C339 322 318 375 282 395 C245 409 205 375 189 342 C173 303 171 264 177 236Z" fill="url(#skin)"/>
-        <path d="M166 262 C156 194 176 155 213 143 C251 117 310 134 337 179 C326 180 299 174 272 164 C251 209 209 239 173 246Z" fill="#2a1a29"/>
-        <path d="M279 155 C307 180 319 216 320 249 C345 272 363 319 346 363 C369 342 379 288 350 201 C333 150 285 113 231 128" fill="#34202c"/>
-        <path d="M202 265 Q225 253 242 264" fill="none" stroke="#4d3335" stroke-width="3" stroke-linecap="round"/><path d="M282 263 Q302 252 318 260" fill="none" stroke="#4d3335" stroke-width="3" stroke-linecap="round"/>
-        <path d="M215 270 Q226 276 239 268 M288 267 Q298 272 310 265" fill="none" stroke="#32272c" stroke-width="3" stroke-linecap="round"/>
-        <path d="M264 272 L257 308 Q265 316 275 308" fill="none" stroke="#b17870" stroke-width="2" stroke-linecap="round"/>
-        <path d="M244 341 Q263 333 286 340 Q264 353 244 341Z" fill="#995664"/><path d="M247 341 Q267 345 283 341" stroke="#6a384d" stroke-width="1.5" fill="none"/>
-        <path d="M180 268 C162 255 157 287 177 308 M340 267 C353 247 357 289 341 302" fill="none" stroke="#bd8678" stroke-width="8" stroke-linecap="round"/>
-        <ellipse cx="173" cy="322" rx="5" ry="9" fill="#e9c98f"/><ellipse cx="341" cy="318" rx="5" ry="9" fill="#e9c98f"/>
-        <path d="M216 411 Q261 439 311 410" fill="none" stroke="#e8c596" stroke-width="2"/><circle cx="263" cy="434" r="6" fill="#f4d8a5"/>
-        <path d="M146 360 Q149 439 126 481 M351 353 Q349 431 379 482" stroke="#b48285" stroke-opacity=".5" stroke-width="3" fill="none"/>
-        <g fill="#e5bd82" opacity=".7"><circle cx="85" cy="117" r="2"/><circle cx="405" cy="184" r="3"/><circle cx="401" cy="340" r="2"/><circle cx="88" cy="365" r="2"/><path d="M390 97v18m-9-9h18" stroke="#e5bd82" stroke-width="1.5"/></g>
-      </svg>
-    </div>
-  </div></section>
-
-  <div class="container events">
-    <div class="event"><div class="event-ico" aria-hidden="true">⌂</div><div><small>Punto de partida · Airbnb</small><strong>Dardignac 28, Recoleta, Santiago</strong><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Dardignac%2028%2C%20Recoleta%2C%20Santiago%2C%20Chile" target="_blank" rel="noopener noreferrer">Ver alojamiento en Maps ↗</a></span></div></div>
-    <div class="event"><div class="event-ico" aria-hidden="true">✧</div><div><small>Evento</small><strong>Altos del Paico · El Monte</strong><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Altos%20del%20Paico%2C%20Camino%20Paico%20Alto%2C%20El%20Monte%2C%20Chile" target="_blank" rel="noopener noreferrer">Cómo llegar al evento ↗</a></span></div></div>
-    <div class="event"><div class="event-ico" aria-hidden="true">↗</div><div><small>Trayecto estimado en auto</small><strong>≈ 45 km · 50–70 min</strong><span>Desde Dardignac 28 hasta Altos del Paico. Revisar Maps el viernes.</span></div></div>
-  </div>
-  <div class="container map-strip" aria-label="Mapa y trayecto">
-    <div class="map-card"><b>Airbnb · origen</b><span>Dardignac 28, Recoleta, Santiago</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Dardignac%2028%2C%20Recoleta%2C%20Santiago%2C%20Chile" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a></div>
-    <div class="map-card"><b>Casamiento · destino</b><span>Altos del Paico, Camino Paico Alto, El Monte</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Altos%20del%20Paico%2C%20Camino%20Paico%20Alto%2C%20El%20Monte%2C%20Chile" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a></div>
-    <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Dardignac%2028%2C%20Recoleta%2C%20Santiago%2C%20Chile&amp;destination=Altos%20del%20Paico%2C%20El%20Monte%2C%20Chile&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Ver trayecto en auto ↗</a>
-  </div>
-  <section class="container angle-reference" aria-labelledby="angleHeading">
-    <h2 id="angleHeading">Referencias del mismo peinado</h2>
-    <p>Frente · perfil · atrás. Tres opciones para mostrarle a la profesional y comparar cómo queda cada forma.</p>
-    <figure style="margin:0"><img src="assets/novia-angles-3x3.png" alt="Tres peinados mostrados de frente, de perfil y desde atrás"><figcaption>Fila 1: ondas glam. Fila 2: moño bajo. Fila 3: semirrecogido con ondas. Imágenes generadas como referencia visual a partir de las fotos personales.</figcaption></figure>
-  </section>
-  <div class="container reservation-strip" aria-label="Pasos para reservar">
-    <div class="reservation-step"><b>1 · Elegir</b><span>Marcá 2 o 3 opciones y definí peinado + maquillaje.</span></div>
-    <div class="reservation-step"><b>2 · Consultar</b><span>Preguntá disponibilidad exacta para el viernes 6/11.</span></div>
-    <div class="reservation-step"><b>3 · Confirmar</b><span>Pedí duración, dirección, qué incluye y forma de reserva.</span></div>
-    <div class="reservation-step"><b>4 · Reservar</b><span>Dejá seña solo cuando el turno quede confirmado por escrito.</span></div>
-  </div>
-
-  <main>
-  <section class="container" id="estilos" aria-labelledby="stylesHeading">
-    <div class="section-heading"><div><div class="overline">01 / Inspiración</div><h2 id="stylesHeading">Primero, elegí tu estilo.</h2><p class="section-desc">Ideas para acompañar un vestido borgoña y accesorios dorados. No son fotografías de trabajos de los salones; podés usar estas preferencias al consultar el turno.</p></div></div>
-    <div class="looks" role="group" aria-label="Elegir estilo de peinado">
-      <button class="look-tile" data-hair-style="ondas" aria-pressed="true" type="button">
-        <span class="look-fig"><svg viewBox="0 0 130 155" aria-hidden="true"><path d="M20 142Q9 95 30 34Q44 0 81 16Q112 24 106 80Q127 126 111 155H17" fill="#483039"/><ellipse cx="66" cy="70" rx="34" ry="45" fill="#edbfab"/><path d="M31 62Q34 13 67 19Q93 15 101 58Q80 53 67 35Q51 62 31 62" fill="#33202d"/><path d="M30 100Q20 126 31 146M94 103Q113 125 100 152" stroke="#765261" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M44 76h13M75 76h13M61 95q7 4 12 0" stroke="#815764" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M36 149Q41 121 56 119L82 119Q98 131 99 155H28" fill="#774050"/></svg></span>
-        <span class="look-copy"><span>01 · Atemporal</span><strong>Ondas suaves</strong><small>Suelto, luminoso y con movimiento.</small></span>
-      </button>
-      <button class="look-tile" data-hair-style="semi" aria-pressed="false" type="button">
-        <span class="look-fig"><svg viewBox="0 0 130 155" aria-hidden="true"><path d="M18 142Q10 111 33 44Q44 7 77 16Q118 27 104 99Q122 136 110 156H16" fill="#3f2937"/><ellipse cx="65" cy="71" rx="33" ry="44" fill="#eec6af"/><path d="M25 69Q22 24 60 16Q101 12 107 60Q84 47 78 28Q56 58 25 69" fill="#37232e"/><path d="M20 73Q7 40 49 29L66 17Q59 56 25 76" fill="#76505c"/><path d="M109 73Q122 41 86 30L77 17Q76 55 109 76" fill="#76505c"/><circle cx="108" cy="62" r="11" fill="#7c5260"/><path d="M43 76h14m18 0h14M60 95q7 5 12 0" stroke="#855965" stroke-width="1.7" fill="none"/><path d="M35 153Q37 125 53 119H81Q97 131 99 155" fill="#855263"/></svg></span>
-        <span class="look-copy"><span>02 · Romántico</span><strong>Semirrecogido</strong><small>Cabello liberado y rostro despejado.</small></span>
-      </button>
-      <button class="look-tile" data-hair-style="recogido" aria-pressed="false" type="button">
-        <span class="look-fig"><svg viewBox="0 0 130 155" aria-hidden="true"><circle cx="96" cy="44" r="28" fill="#51313d"/><path d="M27 93Q22 29 59 18Q95 10 101 73Q104 119 90 133H33" fill="#392532"/><ellipse cx="67" cy="70" rx="34" ry="44" fill="#e9bba5"/><path d="M28 69Q25 20 65 19Q96 13 100 59Q77 52 67 31Q45 64 28 69" fill="#402832"/><path d="M42 76h15M75 76h13M61 96q7 6 14 0" stroke="#855561" stroke-width="1.7" fill="none"/><path d="M53 119L57 112M79 118L76 112" stroke="#d7a67f" stroke-width="8"/><path d="M34 154Q34 128 54 117L77 117Q101 129 100 155" fill="#985364"/><circle cx="31" cy="84" r="3.5" fill="#f3dda9"/><circle cx="101" cy="84" r="3.5" fill="#f3dda9"/></svg></span>
-        <span class="look-copy"><span>03 · Elegante</span><strong>Recogido</strong><small>Ideal para lucir los aros dorados.</small></span>
-      </button>
-      <button class="look-tile" data-hair-style="coleta" aria-pressed="false" type="button">
-        <span class="look-fig"><span style="font-size:54px;filter:drop-shadow(0 5px 3px #51313d33)">◒</span></span>
-        <span class="look-copy"><span>04 · Pulido</span><strong>Coleta baja</strong><small>Despeja el rostro y mantiene el movimiento.</small></span>
-      </button>
-      <button class="look-tile" data-hair-style="trenza" aria-pressed="false" type="button">
-        <span class="look-fig"><span style="font-size:54px;filter:drop-shadow(0 5px 3px #51313d33)">◌</span></span>
-        <span class="look-copy"><span>05 · Romántico</span><strong>Trenza lateral</strong><small>Textura suave para un look menos rígido.</small></span>
-      </button>
-    </div>
-    <div class="makeup-row" role="group" aria-label="Elegir estilo de maquillaje"><span class="makeup-label">Maquillaje preferido</span>
-      <button class="makeup-choice" data-makeup="luminoso" aria-pressed="true" type="button"><span class="swatch" style="background:linear-gradient(135deg,#f5d4b9,#cc9d86)"></span>Natural luminoso</button>
-      <button class="makeup-choice" data-makeup="bronce" aria-pressed="false" type="button"><span class="swatch" style="background:linear-gradient(135deg,#bd8454,#825235)"></span>Glam bronce</button>
-      <button class="makeup-choice" data-makeup="clasico" aria-pressed="false" type="button"><span class="swatch" style="background:linear-gradient(135deg,#9b495f,#51263b)"></span>Elegante de noche</button>
-    </div>
-    <div class="recommendation"><b>Idea de combinación:</b> <span id="lookSuggestion">Ondas suaves con maquillaje luminoso, ojos definidos en tonos champán y labios discretos.</span> La elección final depende de sus gustos, tipo de cabello y vestido.</div>
-    <figure class="personal-lookbook"><img src="assets/novia-lookbook.png" alt="Cuatro propuestas de peinado inspiradas en las referencias personales"><figcaption>Referencia personalizada para conversar con la profesional: ondas, semirrecogido, recogido bajo o coleta con trenza. Es una orientación visual, no una promesa del resultado.</figcaption></figure>
-    <figure class="personal-lookbook"><img src="assets/novia-hairstyles-6.png" alt="Seis referencias adicionales de peinados inspiradas en las referencias personales"><figcaption>Más referencias: moño bajo, coleta alta, trenza corona, ondas laterales, semirrecogido con volumen y coleta baja pulida.</figcaption></figure>
-  </section>
-
-  <section class="container" id="salones" aria-labelledby="salonsHeading">
-      <div class="section-heading"><div><div class="overline">02 / Comparar y reservar</div><h2 id="salonsHeading">Salones y maquilladoras</h2><p class="section-desc">Opciones reales con dirección y enlaces verificables. La disponibilidad para el viernes 6/11 debe confirmarse directamente. Abrí «Ver agenda» y reservá cuanto antes.</p></div><span class="counter" id="salonCounter">7 opciones</span></div>
-    <div class="tools" aria-label="Filtros de búsqueda">
-      <div class="field"><label for="searchSalon">Buscar por nombre o zona</label><input id="searchSalon" type="search" placeholder="Ej. Providencia o Fénix"></div>
-      <div class="field"><label for="district">Ubicación</label><select id="district"><option value="all">Todas las zonas</option><option value="recoleta">Recoleta / Bellavista</option><option value="centro">Santiago Centro</option><option value="providencia">Providencia</option></select></div>
-      <div class="field"><label for="sortBy">Ordenar</label><select id="sortBy"><option value="recommended">Selección inicial</option><option value="alpha">Nombre A–Z</option></select></div>
-      <div class="field"><label for="hairLength">Largo del cabello</label><select id="hairLength"><option value="corto">Corto</option><option value="medio">Medio</option><option value="largo">Largo</option><option value="extra">Extra largo</option></select><div class="field-note">Ajusta precios en dos salones.</div></div>
-    </div>
-    <div class="switch-row"><div class="switch-left"><label class="checkline"><input type="checkbox" id="favsOnly"> Ver solo favoritos</label></div><button class="subaction" id="resetFilters" type="button">Limpiar filtros</button></div>
-    <div class="salon-grid" id="salonGrid" aria-live="polite"></div>
-    <div class="selected-section" id="seleccion">
-      <div class="selected-head"><div><div class="overline">03 / Tu selección personal</div><h3>Mis favoritos <span aria-hidden="true">♡</span></h3><p>Guardá salones para comparar y elegí uno como primera opción.</p></div><div style="font-size:12px;color:#9b7b87;font-weight:850" id="favoritesCount">0 guardados</div></div>
-      <div id="favoriteChips" class="favs"></div><div id="favoritePlaceholder" class="fav-placeholder">Todavía no elegiste favoritos. Tocá el corazón en los salones que te interesen.</div>
-      <div id="chosenCallout" class="selected-callout" aria-live="polite"></div>
-      <div class="selection-controls"><button id="compareBtn" class="btn btn-primary btn-sm" type="button">Comparar seleccionados (<span id="compareCount">0</span>)</button><button id="shareWhatsapp" class="btn btn-outline btn-sm" type="button">Enviar opciones por WhatsApp ↗</button><button id="copySummary" class="btn btn-outline btn-sm" type="button">Copiar mi selección</button><button id="resetChoices" class="btn btn-muted btn-sm" type="button">Reiniciar elección</button></div>
-      <div class="tiny" style="margin-top:13px">Los favoritos se guardan únicamente en este navegador. Para enviarlos a otro dispositivo usá «Copiar» o «WhatsApp». Los botones de comparar admiten hasta 3 salones.</div>
-    </div>
-  </section>
-
-  <section class="container" id="agenda" aria-labelledby="agendaHeading">
-    <div class="section-heading"><div><div class="overline">04 / Plan del día</div><h2 id="agendaHeading">Organizar el viernes 6.</h2><p class="section-desc">Al saber la hora de llegada al matrimonio, calculá una ventana orientativa para el arreglo. Los desplazamientos los ingresás vos: no se estiman automáticamente.</p></div></div>
-    <div class="plan-box">
-      <div><div class="field"><label for="arrivalTime">Hora a la que quieren llegar a Altos del Paico</label><input type="time" id="arrivalTime" value=""></div>
-        <div class="plan-fields">
-          <div class="field"><label for="venueDrive">Airbnb → evento (min)</label><input id="venueDrive" type="number" min="0" max="300" placeholder="Consultar en Maps"><div class="field-note">Traslado real para ese viernes.</div></div>
-          <div class="field"><label for="salonBack">Salón → Airbnb (min)</label><input id="salonBack" type="number" min="0" max="180" placeholder="Según salón elegido"><div class="field-note">0 si la atención es a domicilio.</div></div>
-          <div class="field"><label for="dressMins">Vestirse y retoques (min)</label><input id="dressMins" type="number" min="0" max="180" value="45"></div>
-          <div class="field"><label for="trafficMins">Margen adicional (min)</label><input id="trafficMins" type="number" min="0" max="180" value="30"></div>
-        </div>
-        <p class="tiny" style="margin-top:13px">El lugar del evento se encuentra en Camino Paico Alto s/n, comuna de El Monte. La duración del viaje depende del tránsito de ese día. <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Dardignac%2028%2C%20Recoleta%2C%20Santiago%2C%20Chile&amp;destination=Altos%20del%20Paico%2C%20El%20Monte%2C%20Chile&amp;travelmode=driving" target="_blank" rel="noopener noreferrer" style="color:#74445d">Consultar trayecto en Google Maps ↗</a></p>
-        <div class="field notes"><label for="personalNotes">Mis notas (por ejemplo, peinado deseado o turnos confirmados)</label><textarea id="personalNotes" placeholder="Me gusta el semirrecogido. Preguntar si incluye pestañas, prueba o lavado…"></textarea></div>
-      </div>
-      <div class="plan-output" aria-live="polite"><small>Organización estimada</small><h3>El día, sin apuros.</h3><p id="planIntro">Completá la hora de llegada y los tiempos de traslado para obtener un cronograma.</p><div class="plan-list" id="planResults"></div><p class="tiny" style="margin-top:15px">El cálculo usa los parámetros que ingreses. No verifica duración de ruta, tráfico ni turnos libres.</p></div>
-    </div>
-  </section>
-  </main>
-
-  <footer class="foot"><div class="container"><div class="foot-grid"><div><h3>Una pequeña guía para elegir bien.</h3><p>Precios relevados el 15 de octubre de 2026, sujetos a cambios. Convertidos con 1 CLP ≈ 0,041008 UYU. Servicios para <b>invitada</b>, no para novia. Confirmar por escrito precio final, tipo de peinado, pestañas, lavado, tiempos, forma de pago, políticas de cambios y disponibilidad el 6 de noviembre.</p><div class="field" style="max-width:220px;margin-top:12px"><label for="rateInput" style="color:#dfc0c8">UYU por 1.000 CLP (editable)</label><input id="rateInput" type="number" step="0.001" min="1" max="100" value="41.008" style="background:#fff8f5"></div><p style="font-size:10px">La edición del tipo de cambio actualiza todo el HTML y no implica una cotización futura.</p></div><div><h3>Fuentes y reservas</h3><p>Los siguientes enlaces llevan a páginas de reserva o fichas públicas de cada opción; allí se consulta la disponibilidad real.</p><div class="source-links"><a href="https://agendapro.com/site/cl/puntospahair/391676" target="_blank" rel="noopener noreferrer">Punto Spa Hair</a><a href="https://agendapro.com/site/cl/beautycenterfenix7/384033" target="_blank" rel="noopener noreferrer">Fénix 7</a><a href="https://agendapro.com/site/cl/latelierdeluxepeluqueria/452887" target="_blank" rel="noopener noreferrer">L'Atelier Deluxe</a><a href="https://agendapro.com/site/cl/veranvior/2680" target="_blank" rel="noopener noreferrer">Veranvior</a><a href="https://www.fresha.com/es/book-now/ely-gaby-beauty-studio-iqgmdr6t/all-offer?share&amp;pId=127288" target="_blank" rel="noopener noreferrer">Ely Gaby</a><a href="https://agendapro.com/site/cl/lmaquillaje/82766" target="_blank" rel="noopener noreferrer">Lmaquillaje</a><a href="https://www.2x3.cl/profesional/harcha-estilistas" target="_blank" rel="noopener noreferrer">Harcha Estilistas</a></div><p style="font-size:11px;margin-top:20px">La selección y el formulario son locales. Este archivo no transmite datos ni realiza reservas automáticamente. Los enlaces externos sí requieren conexión.</p></div></div><div class="bottomline"><span>BEAUTY EDIT · SANTIAGO DE CHILE · 06.11.2026</span><span>Hecho para elegir con calma y reservar con tiempo ✧</span></div></div></footer>
-
-  <div class="mobile-dock"><span><strong id="dockChosen">Mi selección</strong><span id="dockCount">0 favoritos guardados</span></span><a href="#seleccion">Ver favoritos →</a></div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <dialog class="dialog" id="compareDialog" aria-labelledby="compareTitle"><div class="dialog-head"><h3 id="compareTitle">Comparación de salones</h3><button class="dialog-close" id="closeDialog" aria-label="Cerrar" type="button">×</button></div><div class="dialog-content" id="comparisonBody"></div></dialog>
-
-  <script>
-  (() => {
-    'use strict';
-    const ORIGIN='Dardignac 28, Recoleta, Santiago, Chile';
-    const KEY='beauty-edit-2026-11-06-v2';
-    const salons=[
-      {id:'punto',name:'Punto Spa Hair',sub:'Providencia · Emilio Vaisse',district:'providencia',address:'Emilio Vaisse 582, Providencia, Santiago, Chile',priceType:'fixed',amount:54990,duration:60,art:1,monogram:'PS',tag:'Pack accesible',recommended:1,amenities:['Maquillaje + peinado en un mismo paquete','Asesoría de imagen y preparación de piel'],notes:'Duración anunciada: 60 minutos. Por tratarse de un look de fiesta, confirmar si ese tiempo alcanza para el peinado elegido.',booking:'https://agendapro.com/site/cl/puntospahair/391676',phone:'56972111342',source:'AgendaPro',published:'Pack de maquillaje y peinado: $54.990 CLP.'},
-      {id:'fenix',name:'Fénix 7 Beauty Center',sub:'Santiago Centro · Alameda',district:'centro',address:'Av. Libertador Bernardo O\u2019Higgins 949, local 9, Santiago, Chile',priceType:'fenix',amount:59990,duration:120,art:2,monogram:'F7',tag:'Ideal para ondas',recommended:2,amenities:['Paquete de maquillaje de evento + ondas','También ofrece look de evento con recogido o semirrecogido'],notes:'Elegí «Ondas» ($59.990) o «Evento completo» ($80.000). Ambos figuran con duración de 120 minutos.',booking:'https://agendapro.com/site/cl/beautycenterfenix7/384033',phone:'56957777773',source:'AgendaPro',published:'Maquillaje + ondas: $59.990 CLP. Servicio para eventos especiales: $80.000 CLP.'},
-      {id:'veranvior',name:'Veranvior',sub:'Providencia · Los Leones',district:'providencia',address:'Coll y Pi 124B, Providencia, Santiago, Chile',priceType:'veranvior',amount:80000,duration:150,art:3,monogram:'V',tag:'Peinado personalizado',recommended:3,amenities:['Maquillaje de fiesta desde $35.000 CLP','Peinado fiesta desde $38.000 CLP según largo'],notes:'Precio calculado como maquillaje de fiesta + peinado para el largo seleccionado; no es un pack cerrado. Consultar lavado (+ desde $10.000 CLP) y precio final. La duración de 150 min es una planificación prudente, no un tiempo conjunto anunciado.',booking:'https://agendapro.com/site/cl/veranvior/2680',phone:'56952000003',source:'AgendaPro',published:'Maquillaje fiesta desde $35.000; peinado $38.000 / $45.000 / $55.000 / $65.000 CLP según largo.'},
-      {id:'latelier',name:"L'Atelier Deluxe",sub:'Providencia · Padre Mariano',district:'providencia',address:'Padre Mariano 10, local 4, Providencia, Santiago, Chile',priceType:'latelier',amount:87980,duration:95,art:4,monogram:'LA',tag:'Peinados de fiesta',recommended:4,amenities:['Maquillaje de noche: $39.990 CLP','Peinado de fiesta según largo de cabello'],notes:'Servicios publicados por separado y calculados como suma. La duración combina maquillaje (50 min) y el peinado correspondiente, pero hay que confirmar cómo se agendan juntos.',booking:'https://agendapro.com/site/cl/latelierdeluxepeluqueria/452887',phone:'56954167235',source:'AgendaPro',published:'Maquillaje noche $39.990; peinado fiesta $32.990 (corto), $47.990 (medio), $62.990 (largo), $79.990 (extra largo).'},
-      {id:'ely',name:'Ely Gaby Beauty Studio',sub:'Providencia · Av. Providencia',district:'providencia',address:'Av. Providencia 1998, oficina 309, Providencia, Santiago, Chile',priceType:'fixed',amount:95000,duration:120,art:5,monogram:'EG',tag:'Atención personalizada',recommended:5,amenities:['Pack clásico: maquillaje + peinado de fiesta','Enfoque de asesoría y estilo personalizado'],notes:'El paquete se anuncia como 2 horas en Fresha. Confirmar el diseño específico del peinado antes de pagar.',booking:'https://www.fresha.com/es/book-now/ely-gaby-beauty-studio-iqgmdr6t/all-offer?share&pId=127288',phone:'56966822984',source:'Fresha',published:'Pack maquillaje clásico + peinado fiesta: $95.000 CLP.'},
-      {id:'lma',name:'Lmaquillaje Makeup Studio',sub:'Providencia · Manuel Montt',district:'providencia',address:'Manuel Montt 252, oficina 215, Providencia, Santiago, Chile',priceType:'fixed',amount:100000,duration:150,art:6,monogram:'LM',tag:'Domicilio a consultar',recommended:6,amenities:['Pack social completo en estudio','Incluye pestañas postizas si se desean'],notes:'El servicio puede durar 120 a 150 min. Se solicita cabello completamente limpio y seco. También ofrecen atención en el Airbnb mediante cotización y coordinación por WhatsApp; $100.000 es precio en estudio, no a domicilio.',booking:'https://agendapro.com/site/cl/lmaquillaje/82766',phone:'56932906801',source:'AgendaPro',published:'Maquillaje + peinado social en estudio: $100.000 CLP. Domicilio: a cotizar.'},
-      {id:'harcha',name:'Harcha Estilistas',sub:'Recoleta · Bellavista',district:'recoleta',address:'Santa Filomena 194, Recoleta, Santiago, Chile',priceType:'quote',amount:null,duration:null,art:7,monogram:'HE',tag:'Opción en Recoleta',recommended:7,amenities:['Servicios de peluquería, peinados y maquillaje','Útil para consultar por cercanía de zona al Airbnb'],notes:'El salón declara ofrecer peinados y maquillaje, pero no encontré un precio público verificable para el paquete de invitada. Consultar si realizan ambos servicios en el mismo turno.',booking:'https://www.2x3.cl/profesional/harcha-estilistas',phone:'56956470192',source:'Ficha pública 2x3',published:'Precio del paquete no publicado; requiere cotización.'},
-      {id:'rockmylove',name:'Rock My Love Studio',sub:'Providencia · Ricardo Lyon',district:'providencia',address:'Av. Ricardo Lyon 1129, local 104, Providencia, Santiago, Chile',priceType:'quote',amount:null,duration:null,art:8,monogram:'RM',tag:'Agenda online',recommended:8,amenities:['Maquillaje y peinado','Peluquería y manicure en el mismo estudio'],notes:'El sitio ofrece agenda para maquillaje y peinado en Providencia. Precio y duración dependen del servicio elegido; consultar paquete de invitada.',booking:'https://rockmylove.cl/',phone:'',source:'Sitio oficial',published:'Precio a confirmar en agenda.'},
-      {id:'ninas',name:"Nina's Beauty",sub:'Providencia · Holanda',district:'providencia',address:'Holanda 29, Providencia, Santiago, Chile',priceType:'quote',amount:null,duration:null,art:9,monogram:'NB',tag:'Maquillaje desde $35.000',recommended:9,amenities:['Maquillaje profesional para eventos','Peinado de evento a cotizar en consulta'],notes:'El maquillaje profesional figura desde $35.000 CLP. El peinado no está tarifado en la ficha, por lo que hay que pedir ambos servicios en la misma solicitud.',booking:'https://ninasbeauty.cl/maquillaje-profesional.html',phone:'56990447777',source:'Sitio oficial',published:'Maquillaje profesional desde $35.000 CLP; peinado a consultar.'},
-      {id:'foriu',name:'Foriu · belleza a domicilio',sub:'Santiago · a domicilio',district:'centro',address:'Servicio a domicilio en Santiago; confirmar cobertura en Recoleta',priceType:'quote',amount:null,duration:null,art:10,monogram:'F',tag:'Sin traslado al salón',recommended:10,amenities:['Peinado y maquillaje profesional a domicilio','Reserva por WhatsApp todos los días'],notes:'Puede ser una buena alternativa si quieren arreglarse en el Airbnb. Confirmar cobertura exacta en Dardignac 28, hora de llegada y costo de traslado.',booking:'https://foriu.com/cl/',phone:'',source:'Sitio oficial',published:'Cotización según paquete y domicilio.'},
-      {id:'mypeluqueria',name:'My Peluquería Santiago',sub:'Santiago Centro · peinados',district:'centro',address:'Santiago Centro; confirmar dirección y disponibilidad al reservar',priceType:'quote',amount:null,duration:null,art:11,monogram:'MP',tag:'Peinados de evento',recommended:11,amenities:['Ondas, semirrecogidos, recogidos y trenzas','Adaptación al vestido y tipo de cabello'],notes:'El sitio ofrece peinados para invitadas y eventos. La reserva se coordina por WhatsApp; preguntar si pueden sumar maquillaje o si conviene contratarlo aparte.',booking:'https://mypeluqueriastgo.cl/peinados/',phone:'',source:'Sitio oficial',published:'Precio a confirmar.'},
-      {id:'sofiodi',name:'SofiOdi Make Up',sub:'Santiago · estudio o domicilio',district:'centro',address:'Santiago; confirmar comuna de atención y domicilio',priceType:'quote',amount:null,duration:null,art:12,monogram:'SO',tag:'Look completo',recommended:12,amenities:['Maquillaje y peinado profesional','Entrevista previa, prueba y kit de retoque'],notes:'Ofrece atención 1 a 1 en estudio o a domicilio. Confirmar si cubre Recoleta, traslado al Airbnb y disponibilidad para el viernes 6/11.',booking:'https://sofiodi.com/',phone:'',source:'Sitio oficial',published:'Precio a confirmar.'},
-      {id:'byvale',name:'By Vale Stuardo',sub:'Maipú · estudio o domicilio',district:'centro',address:'Maipú o domicilio en Santiago; confirmar traslado',priceType:'quote',amount:null,duration:null,art:13,monogram:'BV',tag:'Invitadas y acompañantes',recommended:13,amenities:['Maquillaje y peinado para invitadas','Estudio en Maipú y opción a domicilio'],notes:'Alternativa para cotizar a domicilio. Consultar costo de traslado hasta Recoleta, duración y si puede atender en el Airbnb.',booking:'https://byvalestuardo.cl/novias',phone:'',source:'Sitio oficial',published:'Precio a confirmar según pack y traslado.'},
-      {id:'helen',name:'Helen Makeup',sub:'Santiago · maquillaje a domicilio',district:'centro',address:'Atención a domicilio en Santiago; confirmar cobertura',priceType:'quote',amount:null,duration:null,art:14,monogram:'HM',tag:'Maquillaje + peinado',recommended:14,amenities:['Maquillaje para invitadas y celebraciones','Selección de maquilladora y reserva en calendario'],notes:'Buena alternativa para resolver el maquillaje en el Airbnb. Confirmar si el peinado lo realiza la misma profesional, horarios tempranos y costo de traslado.',booking:'https://helenmakeup.com/home',phone:'',source:'Sitio oficial',published:'Precio a confirmar.'}
-    ];
-    const hairLabels={corto:'cabello corto',medio:'cabello medio',largo:'cabello largo',extra:'cabello extra largo'};
-    const styles={ondas:'ondas suaves',semi:'semirrecogido',recogido:'recogido elegante'};
-    const makeupLabels={luminoso:'maquillaje natural luminoso',bronce:'maquillaje glam bronce',clasico:'maquillaje elegante de noche'};
-    const defaults={hairLength:'medio',hairStyle:'ondas',makeup:'luminoso',rate:41.008,filterDistrict:'all',sortBy:'recommended',budgetEnabled:false,budgetUYU:3300,favsOnly:false,search:'',favorites:[],compares:[],chosen:null,fenixVersion:'ondas',arrival:'',venueDrive:'',salonBack:'',dress:45,traffic:30,notes:''};
-    let persisted={};
-    try{persisted=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
-    let state={...defaults,...persisted};
-    if(!Array.isArray(state.favorites))state.favorites=[];
-    if(!Array.isArray(state.compares))state.compares=[];
-    state.compares=state.compares.filter(x=>salons.some(s=>s.id===x)).slice(0,3);
-    const $=id=>document.getElementById(id);
-    const money=n=>new Intl.NumberFormat('es-UY',{maximumFractionDigits:0}).format(Math.round(n));
-    const dec=n=>new Intl.NumberFormat('es-UY',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
-    const clean=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
-    const getSalon=id=>salons.find(s=>s.id===id);
-    const rateUYU=price=>Math.round(price*(Number(state.rate)||41.008)/1000);
-    const routeURL=address=>'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(ORIGIN)+'&destination='+encodeURIComponent(address)+'&travelmode=driving';
-    const quote=s=>{
-      if(s.priceType==='quote')return {price:null,time:null,short:'A cotizar',range:'Presupuesto por confirmar'};
-      if(s.priceType==='fenix')return state.fenixVersion==='evento'?{price:80000,time:120,short:'Servicio para eventos especiales',range:'Pack con ondas, recogido o semirrecogido'}:{price:59990,time:120,short:'Maquillaje + ondas',range:'Pack de maquillaje de evento + ondas'};
-      if(s.priceType==='latelier'){
-        const hair={corto:[32990,35],medio:[47990,45],largo:[62990,60],extra:[79990,90]}[state.hairLength]||[47990,45];
-        return {price:39990+hair[0],time:50+hair[1],short:'Maquillaje noche + peinado',range:'Suma estimada · '+hairLabels[state.hairLength]};
-      }
-      if(s.priceType==='veranvior'){
-        const hair={corto:38000,medio:45000,largo:55000,extra:65000}[state.hairLength]||45000;
-        return {price:35000+hair,time:150,short:'Maquillaje fiesta + peinado',range:'Desde · '+hairLabels[state.hairLength]};
-      }
-      return {price:s.amount,time:s.duration,short:s.id==='lma'?'Pack social en estudio':s.id==='ely'?'Pack clásico de fiesta':s.id==='punto'?'Peinado + maquillaje':'Paquete completo',range:s.id==='lma'?'A domicilio: cotización diferente':'Precio publicado'};
-    };
-    const durationLabel=s=>{let q=quote(s);if(!q.time)return 'Duración a confirmar'; if(s.id==='lma')return '120–150 min aprox.'; if(s.id==='veranvior')return 'Tiempo conjunto a confirmar';return q.time+' min publicados / sumados'};
-    const waInquiry=s=>{const style=styles[state.hairStyle],makeup=makeupLabels[state.makeup];return 'Hola, quisiera consultar por un turno para el viernes 6 de noviembre de 2026. Soy invitada a un matrimonio y necesito maquillaje y peinado de fiesta. Me gustaría '+style+' y '+makeup+'. ¿Tienen disponibilidad ese día? ¿Cuál sería el precio final, duración y condiciones de reserva? Muchas gracias.'};
-    const waURL=(phone,msg)=>'https://wa.me/'+phone+'?text='+encodeURIComponent(msg);
-    function setupInputs(){
-      $('searchSalon').value=state.search;
-      $('district').value=state.filterDistrict;
-      $('sortBy').value=state.sortBy;
-      $('hairLength').value=state.hairLength;
-      if($('budgetEnabled'))$('budgetEnabled').checked=state.budgetEnabled;
-      if($('budgetUYU'))$('budgetUYU').value=state.budgetUYU;
-      $('favsOnly').checked=state.favsOnly;
-      $('rateInput').value=state.rate;
-      $('arrivalTime').value=state.arrival;
-      $('venueDrive').value=state.venueDrive;
-      $('salonBack').value=state.salonBack;
-      $('dressMins').value=state.dress;
-      $('trafficMins').value=state.traffic;
-      $('personalNotes').value=state.notes;
-    }
-    function updateLook(){
-      document.querySelectorAll('[data-hair-style]').forEach(b=>{let active=b.dataset.hairStyle===state.hairStyle;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
-      document.querySelectorAll('[data-makeup]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.makeup===state.makeup)));
-      let suggestion={luminoso:'piel luminosa, ojos en tonos champán y labios delicados',bronce:'ojos bronce y dorado suave, piel cálida y labios nude',clasico:'ojos definidos con ahumado suave y labios en tono rosa o ciruela'}[state.makeup];
-      let hair={ondas:'Ondas suaves',semi:'Semirrecogido elegante',recogido:'Recogido pulido',coleta:'Coleta baja pulida',trenza:'Trenza lateral suave'}[state.hairStyle];
-      $('lookSuggestion').textContent=hair+' con '+suggestion+'.';
-    }
-    function getVisible(){let items=[...salons];const query=String(state.search||'').toLocaleLowerCase('es').trim();
-      if(query)items=items.filter(s=>(s.name+' '+s.sub+' '+s.address+' '+s.amenities.join(' ')).toLocaleLowerCase('es').includes(query));
-      if(state.filterDistrict!=='all')items=items.filter(s=>s.district===state.filterDistrict);
-      if(state.budgetEnabled)items=items.filter(s=>{let q=quote(s);return q.price!==null&&rateUYU(q.price)<=Number(state.budgetUYU)});
-      if(state.favsOnly)items=items.filter(s=>state.favorites.includes(s.id));
-      if(state.sortBy==='priceAsc')items.sort((a,b)=>(quote(a).price??Infinity)-(quote(b).price??Infinity));
-      if(state.sortBy==='priceDesc')items.sort((a,b)=>(quote(b).price??-Infinity)-(quote(a).price??-Infinity));
-      if(state.sortBy==='alpha')items.sort((a,b)=>a.name.localeCompare(b.name,'es'));
-      return items;
-    }
-    function cardHTML(s){let q=quote(s),fav=state.favorites.includes(s.id),comp=state.compares.includes(s.id),chosen=state.chosen===s.id;
-      let price=q.price===null?'<div class="price-main">A cotizar</div><div class="price-uyu">Precio no publicado</div>':'<div class="price-main">$ '+money(q.price)+' <small>CLP</small></div><div class="price-uyu">($ '+money(rateUYU(q.price))+' UYU aprox.)</div>';
-      let cardNotes=s.amenities.map(t=>'<div class="card-feature"><span class="bullet">✧</span><span>'+clean(t)+'</span></div>').join('');
-      let variant=s.id==='fenix'?'<div class="variant-control"><label for="fenixVariant">Elegí el paquete:</label><select id="fenixVariant" data-fenix-version><option value="ondas" '+(state.fenixVersion==='ondas'?'selected':'')+'>Ondas</option><option value="evento" '+(state.fenixVersion==='evento'?'selected':'')+'>Evento completo</option></select></div>':'';
-      let action=s.id==='harcha'?'<a class="btn btn-primary btn-sm" href="'+waURL(s.phone,waInquiry(s))+'" target="_blank" rel="noopener noreferrer">Pedir cotización ↗</a>':'<a class="btn btn-primary btn-sm" href="'+s.booking+'" target="_blank" rel="noopener noreferrer">Ver agenda ↗</a>';
-      return '<article class="salon-card '+(chosen?'chosen':'')+'" data-salon="'+s.id+'">'+
-       '<div class="salon-art art-'+s.art+'"><span class="mini">'+clean(s.tag)+'</span><span class="initials" aria-hidden="true">'+s.monogram+'</span></div>'+
-       '<div class="salon-content"><div class="card-top"><div><h3>'+clean(s.name)+'</h3><div class="subline">'+clean(s.sub)+'</div></div><button class="heart '+(fav?'is-on':'')+'" type="button" data-action="favorite" data-id="'+s.id+'" aria-label="'+(fav?'Quitar de':'Añadir a')+' favoritos '+clean(s.name)+'" aria-pressed="'+fav+'">'+(fav?'♥':'♡')+'</button></div>'+
-       '<div class="card-pricing"><div class="price-label">'+(s.priceType==='quote'?'Consultá el valor':s.priceType==='veranvior'?'Precio desde · según largo':s.priceType==='latelier'?'Suma de dos servicios':'Precio publicado')+'</div>'+price+'<div class="price-hint">'+clean(q.range)+'</div>'+variant+'</div>'+cardNotes+
-       '<div class="card-meta"><span class="meta-tag">⌛ '+clean(durationLabel(s))+'</span><span class="meta-tag">Turno pendiente</span></div></div>'+
-       '<div class="card-foot"><details class="details"><summary>Qué tener en cuenta y fuente</summary><p>'+clean(s.notes)+'</p><p><b>Dirección:</b> '+clean(s.address)+'</p><p><b>Tarifario:</b> '+clean(s.published)+'</p><a href="'+s.booking+'" target="_blank" rel="noopener noreferrer">Fuente: '+clean(s.source)+' ↗</a></details>'+
-       '<div class="card-buttons">'+action+'<button type="button" data-action="compare" data-id="'+s.id+'" aria-pressed="'+comp+'" class="btn btn-sm '+(comp?'btn-gold':'btn-outline')+'">'+(comp?'✓':'⇄')+' Comparar</button></div>'+
-       '<div class="card-aux"><a class="textlink" href="'+routeURL(s.address)+'" target="_blank" rel="noopener noreferrer">↗ Ruta desde el Airbnb</a>'+((s.phone&&s.id!=='harcha')?'<a class="textlink" href="'+waURL(s.phone,waInquiry(s))+'" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>':'')+'</div>'+
-       '<button type="button" class="choose-btn '+(chosen?'chosen':'')+'" data-action="choose" data-id="'+s.id+'">'+(chosen?'✓ Mi primera opción elegida':'☆ Elegir como primera opción')+'</button></div></article>';
-    }
-    function renderCards(){let list=getVisible();$('salonGrid').innerHTML=list.length?list.map(cardHTML).join(''):'<div class="empty"><strong>No hay resultados con estos filtros.</strong><p>Probá quitando el presupuesto o seleccionando «Todas las zonas».</p></div>';$('salonCounter').textContent=list.length+' de '+salons.length+' opciones';}
-    function renderFavs(){let favs=state.favorites.map(getSalon).filter(Boolean);$('favoriteChips').innerHTML=favs.map(s=>'<span class="fav-chip">♡ '+clean(s.name)+' <b>'+(quote(s).price!==null?'$'+money(rateUYU(quote(s).price))+' UYU':'A cotizar')+'</b><button aria-label="Quitar favorito '+clean(s.name)+'" data-action="favorite" data-id="'+s.id+'" type="button">×</button></span>').join('');
-      $('favoritePlaceholder').hidden=favs.length>0;
-      $('favoritesCount').textContent=favs.length+' guardado'+(favs.length===1?'':'s');
-      $('navFavCount').textContent=favs.length;
-      $('dockCount').textContent=favs.length+' favorito'+(favs.length===1?'':'s')+' guardado'+(favs.length===1?'':'s');
-      const chosen=getSalon(state.chosen);
-      $('chosenCallout').innerHTML=chosen?'<b>Mi primera opción:</b> '+clean(chosen.name)+' · '+(quote(chosen).price!==null?'$ '+money(quote(chosen).price)+' CLP ($ '+money(rateUYU(quote(chosen).price))+' UYU aprox.)':'precio a cotizar'):'Podés marcar un salón como «primera opción» y compararlo con los demás.';
-      $('dockChosen').textContent=chosen?'Primera opción: '+chosen.name:'Mi selección';
-      $('compareCount').textContent=state.compares.length;
-    }
-    const minsToTime=n=>{let v=((n%1440)+1440)%1440;return String(Math.floor(v/60)).padStart(2,'0')+':'+String(v%60).padStart(2,'0')};
-    function renderPlan(){let arrival=state.arrival,drive=state.venueDrive,back=state.salonBack;
-      const chosen=getSalon(state.chosen);let q=chosen?quote(chosen):null;
-      if(!arrival||drive===''||back===''){$('planIntro').textContent='Indicá la hora de llegada al evento y los tiempos de traslado para calcular una ventana de arreglo.';$('planResults').innerHTML='<div class="plan-result"><span>Salón elegido</span><strong>'+(chosen?clean(chosen.name):'Pendiente de elegir')+'</strong></div>';return;}
-      let h=arrival.split(':').map(Number);let arrivalMin=h[0]*60+h[1];let depart=arrivalMin-Number(drive)-Number(state.traffic);
-      let finished=depart-Number(state.dress)-Number(back);
-      let first=q&&q.time?finished-q.time:null;
-      $('planIntro').textContent='Hora sugerida según los tiempos que ingresaste. Revisá las rutas antes de reservar.';
-      $('planResults').innerHTML=[
-        ['Llegada al evento',minsToTime(arrivalMin)],
-        ['Salida del Airbnb',minsToTime(depart)],
-        ['Finalizar en el salón',minsToTime(finished)],
-        ['Inicio aproximado del arreglo',first===null?'Elegí un salón con duración':minsToTime(first)]
-      ].map(([a,b])=>'<div class="plan-result"><span>'+a+'</span><strong>'+b+'</strong></div>').join('');
-      if(first!==null&&(first<0||depart<0))$('planIntro').textContent+=' Atención: parte del plan puede corresponder al día anterior.';
-      if(chosen&&chosen.id==='veranvior')$('planIntro').textContent+=' Para Veranvior se usa una duración de referencia no confirmada.';
-    }
-    function refresh(){updateLook();if($('rateHeader'))$('rateHeader').textContent=dec(state.rate);renderCards();renderFavs();renderPlan();save();}
-    let toastTimer;
-    function toast(text){let t=$('toast');t.textContent=text;t.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('visible'),2900)}
-    function summaryText(){const favs=state.favorites.map(getSalon).filter(Boolean),chosen=getSalon(state.chosen);
-      let text='MI SELECCIÓN · MAQUILLAJE Y PEINADO EN SANTIAGO\nVIERNES 6/11/2026 · Matrimonio en Altos del Paico\nAirbnb: Dardignac 28, Recoleta, Santiago\n\n';
-      text+='Look deseado: '+styles[state.hairStyle]+' + '+makeupLabels[state.makeup]+'; '+hairLabels[state.hairLength]+'.\n';
-      text+='Primera opción: '+(chosen?chosen.name:'aún sin elegir')+'\n\n';
-      if(favs.length){text+='FAVORITOS:\n';favs.forEach((s,i)=>{let q=quote(s);text+=(i+1)+'. '+s.name+' — '+(q.price!==null?('$'+money(q.price)+' CLP ($'+money(rateUYU(q.price))+' UYU aprox.)'):'Precio a consultar')+'\n'+s.address+'\nAgenda/ficha: '+s.booking+'\n\n'})}else text+='Todavía no marqué favoritos.\n\n';
-      if(state.notes.trim())text+='MIS NOTAS: '+state.notes.trim()+'\n\n';
-      text+='Tipo de cambio orientativo: 1.000 CLP = '+dec(state.rate)+' UYU. Tarifas relevadas 15/10/2026, no hay turnos confirmados.\n';return text;
-    }
-    async function copyText(str){try{await navigator.clipboard.writeText(str);toast('Selección copiada para compartir.')}catch(e){const field=document.createElement('textarea');field.value=str;field.style.position='fixed';field.style.left='-9999px';document.body.appendChild(field);field.select();let ok=document.execCommand('copy');field.remove();toast(ok?'Selección copiada.':'No se pudo copiar automáticamente.')}}
-    function compare(){const chosen=state.compares.map(getSalon).filter(Boolean);if(!chosen.length){toast('Marcá entre 1 y 3 salones con el botón Comparar.');return;}
-      const col=(fn)=>chosen.map(s=>'<td>'+fn(s)+'</td>').join('');
-      $('comparisonBody').innerHTML='<table class="comparison"><thead><tr><th>Criterio</th>'+col(s=>'<b>'+clean(s.name)+'</b>')+'</tr></thead><tbody>'+
-        '<tr><th>Precio CLP</th>'+col(s=>quote(s).price===null?'A cotizar':'$ '+money(quote(s).price))+'</tr>'+
-        '<tr><th>Precio UYU</th>'+col(s=>quote(s).price===null?'A cotizar':'$ '+money(rateUYU(quote(s).price))+' aprox.')+'</tr>'+
-        '<tr><th>Zona</th>'+col(s=>clean(s.sub))+'</tr>'+
-        '<tr><th>Servicio</th>'+col(s=>clean(quote(s).short))+'</tr>'+
-        '<tr><th>Duración</th>'+col(s=>clean(durationLabel(s)))+'</tr>'+
-        '<tr><th>Dirección</th>'+col(s=>clean(s.address))+'</tr>'+
-        '<tr><th>Agenda / contacto</th>'+col(s=>'<a href="'+s.booking+'" target="_blank" rel="noopener noreferrer">Abrir enlace ↗</a>')+'</tr>'+
-        '</tbody></table><p class="tiny" style="margin-top:16px">Ninguna opción tiene un turno confirmado. El precio puede depender del largo de cabello, complejidad y adicionales.</p>';
-      if(typeof $('compareDialog').showModal==='function')$('compareDialog').showModal();else $('compareDialog').setAttribute('open','');
-    }
-    setupInputs();refresh();
-    document.querySelectorAll('[data-hair-style]').forEach(b=>b.addEventListener('click',()=>{state.hairStyle=b.dataset.hairStyle;refresh()}));
-    document.querySelectorAll('[data-makeup]').forEach(b=>b.addEventListener('click',()=>{state.makeup=b.dataset.makeup;refresh()}));
-    $('searchSalon').addEventListener('input',e=>{state.search=e.target.value;renderCards();save()});
-    $('district').addEventListener('change',e=>{state.filterDistrict=e.target.value;refresh()});
-    $('sortBy').addEventListener('change',e=>{state.sortBy=e.target.value;refresh()});
-    $('hairLength').addEventListener('change',e=>{state.hairLength=e.target.value;refresh()});
-    $('budgetEnabled').addEventListener('change',e=>{state.budgetEnabled=e.target.checked;refresh()});
-    $('budgetUYU').addEventListener('input',e=>{state.budgetUYU=e.target.value;refresh()});
-    $('favsOnly').addEventListener('change',e=>{state.favsOnly=e.target.checked;refresh()});
-    $('rateInput').addEventListener('input',e=>{let n=Number(e.target.value);if(n>0&&n<1000){state.rate=n;refresh()}});
-    $('salonGrid').addEventListener('change',e=>{if(e.target.matches('[data-fenix-version]')){state.fenixVersion=e.target.value;refresh()}});
-    function act(event){let b=event.target.closest('[data-action]');if(!b)return;const {action,id}=b.dataset;
-      if(action==='favorite'){let f=state.favorites.indexOf(id);if(f<0)state.favorites.push(id);else state.favorites.splice(f,1);toast(f<0?'Añadido a favoritos.':'Quitado de favoritos.');refresh()}
-      if(action==='choose'){state.chosen=state.chosen===id?null:id;if(state.chosen&&!state.favorites.includes(id))state.favorites.push(id);toast(state.chosen?'Primera opción guardada.':'Primera opción desmarcada.');refresh()}
-      if(action==='compare'){let f=state.compares.indexOf(id);if(f>=0)state.compares.splice(f,1);else if(state.compares.length>=3){toast('Podés comparar un máximo de 3 salones.');return}else state.compares.push(id);refresh()}
-    }
-    $('salonGrid').addEventListener('click',act);$('favoriteChips').addEventListener('click',act);
-    $('resetFilters').addEventListener('click',()=>{state.search='';state.filterDistrict='all';state.sortBy='recommended';state.budgetEnabled=false;state.favsOnly=false;setupInputs();refresh()});
-    $('compareBtn').addEventListener('click',compare);
-    $('closeDialog').addEventListener('click',()=>$('compareDialog').close());
-    $('compareDialog').addEventListener('click',e=>{if(e.target===$('compareDialog'))$('compareDialog').close()});
-    $('shareWhatsapp').addEventListener('click',()=>{window.open('https://wa.me/?text='+encodeURIComponent(summaryText()),'_blank','noopener,noreferrer')});
-    $('copySummary').addEventListener('click',()=>copyText(summaryText()));
-    $('resetChoices').addEventListener('click',()=>{if(!window.confirm('¿Quitar favoritos, primera opción, estilos y notas guardadas?'))return;state={...defaults};setupInputs();refresh();toast('Selección reiniciada.')});
-    [['arrivalTime','arrival'],['venueDrive','venueDrive'],['salonBack','salonBack'],['dressMins','dress'],['trafficMins','traffic'],['personalNotes','notes']].forEach(([id,key])=>$(id).addEventListener('input',e=>{state[key]=e.target.value;renderPlan();save()}));
-  })();
-  </script>
+<header class="site-header"><div class="container header-row"><a class="brand" href="#salones">Beauty Edit<small>SANTIAGO · 06 NOV 2026</small></a><nav class="site-nav" aria-label="Navegación"><a href="#peinados">Fotos</a><a href="#profesionales">Salones</a><a href="index.html">Cafés ↗</a></nav></div></header>
+<main id="salones">
+<div class="container page-intro"><div><p class="date">Viernes 6 de noviembre</p><h1>Peinados y maquillaje</h1></div><a class="small-link" href="#profesionales">Ir directo a los 14 profesionales ↓</a></div>
+<section class="container photo-section" id="peinados" aria-labelledby="photosHeading">
+<div class="section-heading"><div><h2 id="photosHeading">Nueve peinados, tres ángulos.</h2></div><span class="badge" id="photoCount">27 vistas</span></div>
+<div class="photo-filters" role="group" aria-label="Filtrar peinados"><button class="chip" data-hair-filter="all" aria-pressed="true">Todos</button><button class="chip" data-hair-filter="suelto" aria-pressed="false">Sueltos y semirrecogidos</button><button class="chip" data-hair-filter="recogido" aria-pressed="false">Recogidos</button><button class="chip" data-hair-filter="coleta" aria-pressed="false">Coletas</button><button class="chip" data-hair-filter="trenza" aria-pressed="false">Trenzas</button></div>
+<div class="hair-grid" id="hairGrid"></div>
+<p class="image-note">Simulaciones con IA a partir de tus referencias personales.</p>
+</section>
+<section class="container salon-section" id="profesionales" aria-labelledby="salonsHeading">
+<div class="section-heading"><div><h2 id="salonsHeading">Salones y maquilladoras</h2></div><span class="badge" id="salonCounter">14 opciones</span></div>
+<div class="salon-tools">
+<div class="field"><label for="searchSalon">Nombre, zona o servicio</label><input id="searchSalon" type="search" placeholder="Ej. ondas, Recoleta, a domicilio"></div>
+<div class="field"><label for="district">Zona</label><select id="district"><option value="all">Todas las opciones</option><option value="recoleta">Recoleta</option><option value="centro">Santiago Centro</option><option value="providencia">Providencia</option><option value="domicilio">A domicilio / coordinar</option></select></div>
+<div class="field"><label for="sortBy">Orden</label><select id="sortBy"><option value="recommended">Selección inicial</option><option value="alpha">Nombre A–Z</option></select></div>
+</div>
+<div id="salonGrid" class="salon-grid" aria-live="polite"></div>
+</section>
+</main>
+<div class="page-end"><div class="container"><a href="#peinados">Volver a las fotos ↑</a><a href="index.html">Guía de café, cacao y té ↗</a></div></div>
+<dialog class="photo-dialog" id="hairDialog" aria-labelledby="hairDialogTitle"><div class="dialog-bar"><h2 id="hairDialogTitle"></h2><button id="closeHairDialog" aria-label="Cerrar fotos">Cerrar ×</button></div><div id="hairDialogViews"></div><div class="dialog-footer"><button id="previousHair">← Anterior</button><a id="hairSheetLink" target="_blank" rel="noopener">Abrir lámina completa ↗</a><button id="nextHair">Siguiente →</button></div></dialog>
+<script id="salon-data" type="application/json">[
+  {
+    "id": "punto",
+    "name": "Punto Spa Hair",
+    "zone": "providencia",
+    "address": "Emilio Vaisse 582, Providencia, Santiago, Chile",
+    "booking": "https://agendapro.com/site/cl/puntospahair/391676",
+    "phone": "56972111342",
+    "services": [
+      "Maquillaje + peinado en un mismo turno",
+      "Confirmar el estilo y duración al reservar"
+    ]
+  },
+  {
+    "id": "fenix",
+    "name": "Fénix 7 Beauty Center",
+    "zone": "centro",
+    "address": "Av. Libertador Bernardo O’Higgins 949, local 9, Santiago, Chile",
+    "booking": "https://agendapro.com/site/cl/beautycenterfenix7/384033",
+    "phone": "56957777773",
+    "services": [
+      "Maquillaje con ondas, recogido o semirrecogido",
+      "Elegir el peinado al consultar el turno"
+    ]
+  },
+  {
+    "id": "veranvior",
+    "name": "Veranvior",
+    "zone": "providencia",
+    "address": "Coll y Pi 124B, Providencia, Santiago, Chile",
+    "booking": "https://agendapro.com/site/cl/veranvior/2680",
+    "phone": "56952000003",
+    "services": [
+      "Maquillaje de fiesta y peinado según cabello",
+      "Coordinar ambos servicios en la misma visita"
+    ]
+  },
+  {
+    "id": "latelier",
+    "name": "L'Atelier Deluxe",
+    "zone": "providencia",
+    "address": "Padre Mariano 10, local 4, Providencia, Santiago, Chile",
+    "booking": "https://agendapro.com/site/cl/latelierdeluxepeluqueria/452887",
+    "phone": "56954167235",
+    "services": [
+      "Maquillaje de noche y peinados de fiesta",
+      "Los servicios se coordinan juntos al reservar"
+    ]
+  },
+  {
+    "id": "ely",
+    "name": "Ely Gaby Beauty Studio",
+    "zone": "providencia",
+    "address": "Av. Providencia 1998, oficina 309, Providencia, Santiago, Chile",
+    "booking": "https://www.fresha.com/es/book-now/ely-gaby-beauty-studio-iqgmdr6t/all-offer?share&pId=127288",
+    "phone": "56966822984",
+    "services": [
+      "Maquillaje social y peinado de fiesta",
+      "Atención personalizada en estudio"
+    ]
+  },
+  {
+    "id": "lma",
+    "name": "Lmaquillaje Makeup Studio",
+    "zone": "providencia",
+    "address": "Manuel Montt 252, oficina 215, Providencia, Santiago, Chile",
+    "booking": "https://agendapro.com/site/cl/lmaquillaje/82766",
+    "phone": "56932906801",
+    "services": [
+      "Maquillaje y peinado social",
+      "Estudio; domicilio a consultar"
+    ]
+  },
+  {
+    "id": "harcha",
+    "name": "Harcha Estilistas",
+    "zone": "recoleta",
+    "address": "Santa Filomena 194, Recoleta, Santiago, Chile",
+    "booking": "https://www.2x3.cl/profesional/harcha-estilistas",
+    "phone": "56956470192",
+    "services": [
+      "Peluquería, peinados y maquillaje",
+      "Confirmar que ambos servicios estén disponibles"
+    ]
+  },
+  {
+    "id": "rockmylove",
+    "name": "Rock My Love Studio",
+    "zone": "providencia",
+    "address": "Av. Ricardo Lyon 1129, local 104, Providencia, Santiago, Chile",
+    "booking": "https://rockmylove.cl/",
+    "phone": "",
+    "services": [
+      "Maquillaje y peinado",
+      "Agenda online del estudio"
+    ]
+  },
+  {
+    "id": "ninas",
+    "name": "Nina's Beauty",
+    "zone": "providencia",
+    "address": "Holanda 29, Providencia, Santiago, Chile",
+    "booking": "https://ninasbeauty.cl/maquillaje-profesional.html",
+    "phone": "56990447777",
+    "services": [
+      "Maquillaje profesional para eventos",
+      "Coordinar el peinado en la misma solicitud"
+    ]
+  },
+  {
+    "id": "foriu",
+    "name": "Foriu · belleza a domicilio",
+    "zone": "domicilio",
+    "address": "Servicio a domicilio en Santiago; confirmar cobertura en Recoleta",
+    "booking": "https://foriu.com/cl/",
+    "phone": "",
+    "services": [
+      "Peinado y maquillaje a domicilio",
+      "Confirmar cobertura y horario en Recoleta"
+    ]
+  },
+  {
+    "id": "mypeluqueria",
+    "name": "My Peluquería Santiago",
+    "zone": "centro",
+    "address": "Santiago Centro; confirmar dirección y disponibilidad al reservar",
+    "booking": "https://mypeluqueriastgo.cl/peinados/",
+    "phone": "",
+    "services": [
+      "Ondas, recogidos, semirrecogidos y trenzas",
+      "Confirmar si también ofrecen maquillaje"
+    ]
+  },
+  {
+    "id": "sofiodi",
+    "name": "SofiOdi Make Up",
+    "zone": "domicilio",
+    "address": "Santiago; confirmar comuna de atención y domicilio",
+    "booking": "https://sofiodi.com/",
+    "phone": "",
+    "services": [
+      "Maquillaje y peinado profesional",
+      "Estudio o domicilio a coordinar"
+    ]
+  },
+  {
+    "id": "byvale",
+    "name": "By Vale Stuardo",
+    "zone": "domicilio",
+    "address": "Maipú o domicilio en Santiago; confirmar traslado",
+    "booking": "https://byvalestuardo.cl/novias",
+    "phone": "",
+    "services": [
+      "Maquillaje y peinado para invitadas",
+      "Estudio en Maipú o servicio a domicilio"
+    ]
+  },
+  {
+    "id": "helen",
+    "name": "Helen Makeup",
+    "zone": "domicilio",
+    "address": "Atención a domicilio en Santiago; confirmar cobertura",
+    "booking": "https://helenmakeup.com/home",
+    "phone": "",
+    "services": [
+      "Maquillaje para invitadas y celebraciones",
+      "Consultar peinado y atención a domicilio"
+    ]
+  }
+]</script>
+<script src="assets/beauty.js"></script>
 </body>
 </html>
