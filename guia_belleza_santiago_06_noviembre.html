@@ -62,6 +62,9 @@
     .personal-lookbook{margin:24px 0 0;background:#fff;border:1px solid #eadfda;border-radius:20px;padding:10px;box-shadow:0 8px 22px #321d2609}
     .personal-lookbook img{display:block;width:100%;border-radius:14px;max-height:360px;object-fit:cover;object-position:center}
     .personal-lookbook figcaption{padding:10px 6px 3px;color:#907d82;font-size:11px}
+    .card-pricing{display:none}
+    #seleccion,#agenda{display:none}
+    footer.foot{display:none}
     .hero-art{display:none}
     .hero-grid{grid-template-columns:1fr;min-height:330px}
     @media(max-width:760px){.reservation-strip{grid-template-columns:1fr 1fr}.hero-photo{inset:0;width:100%;height:100%;opacity:.42}.hero-art .portrait{opacity:.08}}
@@ -218,8 +221,8 @@
 <body>
   <header class="topbar"><nav class="container nav" aria-label="Navegación principal">
     <a class="brand" href="#inicio" aria-label="Volver al inicio"><span class="brand-mark">L<span style="font-style:italic">.</span></span><span class="brand-name">Beauty Edit<small>Santiago · Noviembre 2026</small></span></a>
-    <div class="navlinks"><a href="#estilos">El estilo</a><a href="#salones">Salones</a><a href="#seleccion">Mis favoritos</a><a href="#agenda">Organización</a><a href="index.html">Guía de compras ↗</a></div>
-    <a class="nav-pill" href="#seleccion">♡ <span id="navFavCount">0</span> favoritos</a>
+    <div class="navlinks"><a href="#estilos">Estilos</a><a href="#salones">Opciones</a><a href="index.html">Guía de compras ↗</a></div>
+    <a class="nav-pill" href="#salones">Ver opciones</a>
   </nav></header>
 
   <section class="hero" id="inicio"><div class="container hero-grid">
@@ -254,12 +257,12 @@
   <div class="container events">
     <div class="event"><div class="event-ico" aria-hidden="true">⌂</div><div><small>Punto de partida · Airbnb</small><strong>Dardignac 28, Recoleta, Santiago</strong><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Dardignac%2028%2C%20Recoleta%2C%20Santiago%2C%20Chile" target="_blank" rel="noopener noreferrer">Ver alojamiento en Maps ↗</a></span></div></div>
     <div class="event"><div class="event-ico" aria-hidden="true">✧</div><div><small>Evento</small><strong>Altos del Paico · El Monte</strong><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Altos%20del%20Paico%2C%20Camino%20Paico%20Alto%2C%20El%20Monte%2C%20Chile" target="_blank" rel="noopener noreferrer">Cómo llegar al evento ↗</a></span></div></div>
-    <div class="event"><div class="event-ico" aria-hidden="true">＄</div><div><small>Cambio de referencia · editable</small><strong>1.000 CLP ≈ <span id="rateHeader" style="display:inline;color:#422c39;font-size:inherit;margin:0">41,01</span> UYU</strong><span>Referencia del 15/10/2026 · no cotización bancaria</span></div></div>
+    <div class="event"><div class="event-ico" aria-hidden="true">↗</div><div><small>Trayecto estimado en auto</small><strong>≈ 45 km · 50–70 min</strong><span>Desde Dardignac 28 hasta Altos del Paico. Revisar Maps el viernes.</span></div></div>
   </div>
   <div class="container reservation-strip" aria-label="Pasos para reservar">
     <div class="reservation-step"><b>1 · Elegir</b><span>Marcá 2 o 3 opciones y definí peinado + maquillaje.</span></div>
     <div class="reservation-step"><b>2 · Consultar</b><span>Preguntá disponibilidad exacta para el viernes 6/11.</span></div>
-    <div class="reservation-step"><b>3 · Confirmar</b><span>Pedí precio final, duración, dirección y qué incluye.</span></div>
+    <div class="reservation-step"><b>3 · Confirmar</b><span>Pedí duración, dirección, qué incluye y forma de reserva.</span></div>
     <div class="reservation-step"><b>4 · Reservar</b><span>Dejá seña solo cuando el turno quede confirmado por escrito.</span></div>
   </div>
 
@@ -290,14 +293,14 @@
   </section>
 
   <section class="container" id="salones" aria-labelledby="salonsHeading">
-      <div class="section-heading"><div><div class="overline">02 / Comparar y reservar</div><h2 id="salonsHeading">Salones y maquilladoras</h2><p class="section-desc">Opciones reales con dirección y enlaces verificables. Los importes son publicados o estimaciones sumando servicios; <b>no significan turno disponible para el 6/11</b>. Abrí «Ver agenda» y reservá cuanto antes: ese viernes es la fecha del casamiento.</p></div><span class="counter" id="salonCounter">7 opciones</span></div>
+      <div class="section-heading"><div><div class="overline">02 / Comparar y reservar</div><h2 id="salonsHeading">Salones y maquilladoras</h2><p class="section-desc">Opciones reales con dirección y enlaces verificables. La disponibilidad para el viernes 6/11 debe confirmarse directamente. Abrí «Ver agenda» y reservá cuanto antes.</p></div><span class="counter" id="salonCounter">7 opciones</span></div>
     <div class="tools" aria-label="Filtros de búsqueda">
       <div class="field"><label for="searchSalon">Buscar por nombre o zona</label><input id="searchSalon" type="search" placeholder="Ej. Providencia o Fénix"></div>
       <div class="field"><label for="district">Ubicación</label><select id="district"><option value="all">Todas las zonas</option><option value="recoleta">Recoleta / Bellavista</option><option value="centro">Santiago Centro</option><option value="providencia">Providencia</option></select></div>
-      <div class="field"><label for="sortBy">Ordenar</label><select id="sortBy"><option value="recommended">Selección inicial</option><option value="priceAsc">Precio: menor a mayor</option><option value="priceDesc">Precio: mayor a menor</option><option value="alpha">Nombre A–Z</option></select></div>
+      <div class="field"><label for="sortBy">Ordenar</label><select id="sortBy"><option value="recommended">Selección inicial</option><option value="alpha">Nombre A–Z</option></select></div>
       <div class="field"><label for="hairLength">Largo del cabello</label><select id="hairLength"><option value="corto">Corto</option><option value="medio">Medio</option><option value="largo">Largo</option><option value="extra">Extra largo</option></select><div class="field-note">Ajusta precios en dos salones.</div></div>
     </div>
-    <div class="switch-row"><div class="switch-left"><label class="checkline"><input type="checkbox" id="budgetEnabled"> Solo hasta mi presupuesto</label><label><span class="sr-only">Presupuesto máximo en UYU</span><input class="budget-entry" type="number" min="100" max="20000" step="100" id="budgetUYU" value="3300" aria-label="Presupuesto máximo en UYU"></label><span class="small-note">UYU</span><label class="checkline"><input type="checkbox" id="favsOnly"> Ver solo favoritos</label></div><button class="subaction" id="resetFilters" type="button">Limpiar filtros</button></div>
+    <div class="switch-row"><div class="switch-left"><label class="checkline"><input type="checkbox" id="favsOnly"> Ver solo favoritos</label></div><button class="subaction" id="resetFilters" type="button">Limpiar filtros</button></div>
     <div class="salon-grid" id="salonGrid" aria-live="polite"></div>
     <div class="selected-section" id="seleccion">
       <div class="selected-head"><div><div class="overline">03 / Tu selección personal</div><h3>Mis favoritos <span aria-hidden="true">♡</span></h3><p>Guardá salones para comparar y elegí uno como primera opción.</p></div><div style="font-size:12px;color:#9b7b87;font-weight:850" id="favoritesCount">0 guardados</div></div>
@@ -389,8 +392,8 @@
       $('district').value=state.filterDistrict;
       $('sortBy').value=state.sortBy;
       $('hairLength').value=state.hairLength;
-      $('budgetEnabled').checked=state.budgetEnabled;
-      $('budgetUYU').value=state.budgetUYU;
+      if($('budgetEnabled'))$('budgetEnabled').checked=state.budgetEnabled;
+      if($('budgetUYU'))$('budgetUYU').value=state.budgetUYU;
       $('favsOnly').checked=state.favsOnly;
       $('rateInput').value=state.rate;
       $('arrivalTime').value=state.arrival;
@@ -460,7 +463,7 @@
       if(first!==null&&(first<0||depart<0))$('planIntro').textContent+=' Atención: parte del plan puede corresponder al día anterior.';
       if(chosen&&chosen.id==='veranvior')$('planIntro').textContent+=' Para Veranvior se usa una duración de referencia no confirmada.';
     }
-    function refresh(){updateLook();$('rateHeader').textContent=dec(state.rate);renderCards();renderFavs();renderPlan();save();}
+    function refresh(){updateLook();if($('rateHeader'))$('rateHeader').textContent=dec(state.rate);renderCards();renderFavs();renderPlan();save();}
     let toastTimer;
     function toast(text){let t=$('toast');t.textContent=text;t.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('visible'),2900)}
     function summaryText(){const favs=state.favorites.map(getSalon).filter(Boolean),chosen=getSalon(state.chosen);
