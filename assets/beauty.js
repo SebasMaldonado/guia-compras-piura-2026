@@ -1,6 +1,12 @@
 'use strict';
 const salons=JSON.parse(document.getElementById('salon-data').textContent);
 const hairs=[
+  {name:'Moño alto de bailarina',type:'recogido',group:'Recogido pulido',sheet:'beauty-updos-polished',row:0,ratio:1145/1374},
+  {name:'Moño bajo lateral',type:'recogido',group:'Recogido lateral',sheet:'beauty-updos-polished',row:1,ratio:1145/1374},
+  {name:'Corona trenzada recogida',type:'recogido',tags:['trenza'],group:'Recogido con trenza',sheet:'beauty-updos-polished',row:2,ratio:1145/1374},
+  {name:'Recogido bajo con torsiones',type:'recogido',group:'Recogido bajo',sheet:'beauty-updos-romantic',row:0,ratio:2/3},
+  {name:'Recogido alto de rizos',type:'recogido',group:'Recogido con volumen',sheet:'beauty-updos-romantic',row:1,ratio:2/3},
+  {name:'Recogido enrollado vintage',type:'recogido',group:'Recogido vintage',sheet:'beauty-updos-romantic',row:2,ratio:2/3},
   {name:'Ondas laterales',type:'suelto',group:'Suelto',sheet:'beauty-classics',row:0,ratio:2/3},
   {name:'Moño bajo con textura',type:'recogido',group:'Recogido',sheet:'beauty-classics',row:1,ratio:2/3},
   {name:'Semirrecogido con ondas',type:'suelto',group:'Semirrecogido',sheet:'beauty-classics',row:2,ratio:2/3},
@@ -9,7 +15,7 @@ const hairs=[
   {name:'Trenza lateral suelta',type:'trenza',group:'Trenza',sheet:'beauty-ponytails',row:2,ratio:1145/1374},
   {name:'Recogido francés',type:'recogido',group:'Recogido',sheet:'beauty-updos',row:0,ratio:2/3},
   {name:'Moño alto suave',type:'recogido',group:'Recogido',sheet:'beauty-updos',row:1,ratio:2/3},
-  {name:'Moño bajo trenzado',type:'trenza',group:'Recogido con trenza',sheet:'beauty-updos',row:2,ratio:2/3}
+  {name:'Moño bajo trenzado',type:'trenza',tags:['recogido'],group:'Recogido con trenza',sheet:'beauty-updos',row:2,ratio:2/3}
 ];
 const $=id=>document.getElementById(id);
 const escapeHTML=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
@@ -17,7 +23,7 @@ const normalize=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toL
 let hairFilter='all',currentHair=0;
 const views=h=>'<div class="hair-views" style="--photo-aspect:'+h.ratio+'">'+['Frente','Perfil','Atrás'].map((label,col)=>'<span class="hair-view" role="img" aria-label="'+escapeHTML(h.name+' · '+label)+'" style="background-image:url(assets/'+h.sheet+'.webp);background-position:'+(col*50)+'% '+(h.row*50)+'%"></span>').join('')+'</div><div class="angle-labels"><span>Frente</span><span>Perfil</span><span>Atrás</span></div>';
 function renderHair(){
-  const visible=hairs.map((hair,index)=>({hair,index})).filter(({hair})=>hairFilter==='all'||hair.type===hairFilter||(hairFilter==='recogido'&&hair.name==='Moño bajo trenzado'));
+  const visible=hairs.map((hair,index)=>({hair,index})).filter(({hair})=>hairFilter==='all'||hair.type===hairFilter||hair.tags?.includes(hairFilter));
   $('hairGrid').innerHTML=visible.map(({hair:h,index})=>'<article class="hair-card"><div class="hair-title"><h3>'+escapeHTML(h.name)+'</h3><span>'+h.group+'</span></div><button class="hair-photo-button" data-open-hair="'+index+'" aria-label="Ampliar las tres vistas de '+escapeHTML(h.name)+'">'+views(h)+'</button><div class="hair-bottom"><span>Frente · perfil · atrás</span><button data-open-hair="'+index+'">Ver en grande ↗</button></div></article>').join('');
   $('photoCount').textContent=visible.length+' peinados · '+visible.length*3+' vistas';
 }

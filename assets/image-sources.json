@@ -100,6 +100,16 @@
     {
       "file": "assets/beauty-classics.webp",
       "source": "Optimized copy of the existing novia-angles-3x3.png generated reference"
+    },
+    {
+      "file": "assets/beauty-updos-polished.webp",
+      "tool": "image_gen (built-in)",
+      "prompt": "Use case: photorealistic-natural. Asset type: personalized hairstyle reference catalog for an adult wedding guest. The two input photos are identity references of the SAME adult woman. Preserve her recognizable facial features, face shape, warm skin tone, long dark brown hair, natural proportions and realistic skin texture. Create a precise grid of 3 rows by 3 columns, 9 equal portrait panels. Each ROW shows ONE identical hairstyle from FRONT, true SIDE PROFILE, and BACK, left to right. The exact construction of the hairstyle must be consistent across its three angles. Show the full crown and full hairstyle with margin, head and shoulders or upper chest, consistent burgundy guest dress, small gold earrings, plain warm cream studio backdrop and soft even light. ALL hair must be fully pinned up for every style, no ponytails or half-up styles. No text, no logos, no watermark, no veil or bridal ornaments. Row 1: a sleek high ballerina bun, smooth clean center-parted front, round compact bun on crown. Row 2: a sleek low SIDE bun placed behind the woman's left ear, soft side part, clearly asymmetric placement visible from the back. Row 3: a full crown braid updo, hair woven into a thick braid encircling the head with all lengths tucked away, no loose braid over shoulder. Three unmistakably different professional wedding guest updos."
+    },
+    {
+      "file": "assets/beauty-updos-romantic.webp",
+      "tool": "image_gen (built-in)",
+      "prompt": "Use case: photorealistic-natural. Asset type: personalized hairstyle reference catalog for an adult wedding guest. The two input photos are identity references of the SAME adult woman. Preserve her recognizable facial features, face shape, warm skin tone, long dark brown hair, natural proportions and realistic skin texture. Create a precise grid of 3 rows by 3 columns, 9 equal portrait panels. Each ROW shows ONE identical hairstyle from FRONT, true SIDE PROFILE, and BACK, left to right. The exact construction of the hairstyle must be consistent across its three angles. Show the full crown and full hairstyle with margin, head and shoulders or upper chest, consistent burgundy guest dress, small gold earrings, plain warm cream studio backdrop and soft even light. ALL hair must be fully pinned up for every style, no ponytails or half-up styles. No text, no logos, no watermark, no veil or bridal ornaments. Row 1: a low twisted updo built from two smooth rope twists crossing into a compact knot at the nape, delicately swept front. Row 2: a romantic high curly updo, voluminous curls pinned on crown with two fine face-framing tendrils, all lengths pinned up. Row 3: a vintage Gibson tuck / horizontal rolled updo, one smooth horizontal inward roll across the nape, gentle front volume, no braid, no separate round bun. Three unmistakably different professional updos."
     }
   ]
 }
